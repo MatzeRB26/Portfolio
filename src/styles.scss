@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+@use './styles/abstracts/variables.scss';
+@use './styles/abstracts/mixins.scss';
+@use './styles/abstracts/breakpoints.scss';
+
+@use './styles/base/reset.scss';
+@use './styles/base/typography.scss';
+
+@font-face {
+    font-family: "Poppins";
+    src: url("./app/assets/fonts/poppins-v24-latin-regular.woff2") format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("./app/assets/fonts/poppins-v24-latin-700.woff2") format("woff2");
+    font-weight: 700;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #141D2F;
+}
