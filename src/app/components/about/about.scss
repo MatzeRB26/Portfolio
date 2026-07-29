@@ -1,0 +1,81 @@
+.about {
+    width: 100%;
+    background: #141d2f;
+    padding: 100px 0;
+}
+
+.about-container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.about-content {
+    width: 471px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+h2 {
+    margin: 0;
+    font-family: "Poppins";
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 120%;
+    color: white;
+}
+
+.about-intro {
+    margin: 0;
+    font-size: 16px;
+    line-height: 120%;
+    color: white;
+}
+
+.about-list {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.about-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+
+    img {
+        width: 30px;
+        height: 30px;
+        flex-shrink: 0;
+    }
+
+    p {
+        margin: 0;
+        color: white;
+        font-size: 16px;
+        line-height: 120%;
+    }
+}
+
+.about-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.about-glow {
+    position: absolute;
+    width: 634px;
+}
+
+.about-person {
+    position: relative;
+    width: 593px;
+}
