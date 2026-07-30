@@ -63,6 +63,10 @@ h2 {
     }
 }
 
+.about-item img:hover {
+    transform: scale(1.3);
+}
+
 .about-image {
     position: relative;
     display: flex;
@@ -78,4 +82,9 @@ h2 {
 .about-person {
     position: relative;
     width: 593px;
+    top: 30px;
+}
+
+.about-me {
+    position: relative;
 }

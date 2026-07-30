@@ -87,6 +87,8 @@
     height: 4px;
     background: #70E61C;
     margin-right: 42px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .line::before {
@@ -146,7 +148,7 @@
     width: 572px;
     height: 608px;
     top: 150px;
-    left: 330px;
+    left: 200px;
 }
 
 .shadow-right {

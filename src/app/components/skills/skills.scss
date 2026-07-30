@@ -1,0 +1,129 @@
+.skills {
+    position: relative;
+    overflow-x: clip;
+}
+
+.skills-bg {
+    position: absolute;
+    top: -180px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills-icons {
+    width: 664px;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    row-gap: 80px;
+    column-gap: 60px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+
+    img {
+        width: 60px;
+        height: 60px;
+        transition: transform .25s ease;
+    }
+
+    &:hover img {
+        transform: translateY(-12px);
+    }
+}
+
+.skills-content {
+    width: 471px;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 48px;
+}
+
+.skills-title h2 {
+    margin: 0;
+    color: white;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 120%;
+    flex-shrink: 0;
+}
+
+.skills-line {
+    position: relative;
+    width: 287px;
+    height: 4px;
+    background: rgba(28, 218, 230, 1);
+    border-radius: 10px 0 0 10px;
+}
+
+.skills-line::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 2000px;
+    height: 4px;
+    background: rgba(28, 218, 230, 1);
+}
+
+.skills-content p {
+    margin: 0 0 40px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.skills-content h3 {
+    margin: 10px 0 20px;
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.skills-content h3 span {
+    color: #9747FF;
+}
+
+.btn-primary {
+    width: 200px;
+    height: 58px;
+    border: none;
+    border-radius: 10px;
+    background: #70E61C;
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    transition:
+        transform .125s ease,
+        background-color .125s ease;
+}
+
+.btn-primary:hover {
+    background: #9747FF;
+    transform: scale(1.08);
+}
