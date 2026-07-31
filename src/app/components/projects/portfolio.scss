@@ -17,32 +17,16 @@
     height: 608px;
     background: url("/assets/images/blue-shadow-skills-right.png") no-repeat center;
     background-size: contain;
-    z-index: -10;
 }
 
 .portfolio-header {
     display: flex;
     align-items: center;
-    gap: 32px;
     margin-bottom: 32px;
 }
 
-.portfolio-line {
+.portfolio-header {
     position: relative;
-    width: 68px;
-    height: 4px;
-    background: rgb(151, 71, 255);
-    border-radius: 0 10px 10px 0;
-}
-
-.portfolio-line::before {
-    content: "";
-    position: absolute;
-    right: 100%;
-    top: 0;
-    width: 3850px;
-    height: 4px;
-    background: rgb(151, 71, 255);
 }
 
 .portfolio-header h2 {
@@ -51,6 +35,27 @@
     font-size: 90px;
     font-weight: 700;
     line-height: 120%;
+}
+
+.portfolio-line {
+    position: absolute;
+    left: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 68px;
+    height: 4px;
+    background: #9747FF;
+    border-radius: 0 10px 10px 0;
+}
+
+.portfolio-line::before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0;
+    width: 4000px;
+    height: 4px;
+    background: #9747FF;
 }
 
 .portfolio-description {
@@ -65,7 +70,7 @@
 .portfolio-projects {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
 }
 
 .project-card {

@@ -1,1 +1,33 @@
-<p>references works!</p>
+<section class="references">
+    <div class="references-container">
+        <div class="references-content">
+            <div class="references-card">
+                <p class="references-text">
+                    {{ references()[currentReference()].text }}
+                </p>
+                <div class="references-footer">
+                    <div class="references-line"></div>
+                    <span class="references-author">
+                        {{ references()[currentReference()].author }}
+                    </span>
+                </div>
+            </div>
+            <div class="references-image-container">
+                <img class="references-image" [src]="references()[currentReference()].image" [alt]="references()[currentReference()].author">
+            </div>
+        </div>
+        <div class="references-navigation">
+            <button class="references-arrow" type="button" aria-label="Previous reference" (click)="previousReference()">
+                <img src="assets/icons/arrow-left.svg" alt="">
+            </button>
+            <div class="references-dots">
+                @for (reference of references(); track $index; let i = $index) {
+                    <button class="references-dot" type="button" [class.references-dot--active]="i === currentReference()" (click)="setCurrentReference(i)" [attr.aria-label]="'Reference ' + (i + 1)"></button>
+                }
+            </div>
+            <button class="references-arrow" type="button" aria-label="Next reference" (click)="nextReference()">
+                <img src="assets/icons/arrow-right.svg" alt="">
+            </button>
+        </div>
+    </div>
+</section> 
