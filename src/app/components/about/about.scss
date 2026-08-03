@@ -1,12 +1,10 @@
 .about {
-    width: 100%;
     background: #141d2f;
-    padding: 100px 0;
+    padding: 100px;
 }
 
 .about-container {
     max-width: 1440px;
-    width: 100%;
     margin: 0 auto;
     padding: 0 100px;
     display: flex;
@@ -24,7 +22,6 @@
 
 h2 {
     margin: 0;
-    font-family: "Poppins";
     font-size: 90px;
     font-weight: 700;
     line-height: 120%;
