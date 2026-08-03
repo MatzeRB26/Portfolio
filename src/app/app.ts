@@ -6,11 +6,12 @@ import { Skills } from './components/skills/skills';
 import { Portfolio } from './components/projects/portfolio';
 import { ReferencesComponent } from './components/references/references';
 import { Contact } from './components/contact/contact';
+import { Footer } from "./components/footer/footer";
 
 
 @Component({
   selector: 'app-root',
-  imports: [Navbar, Hero, About, Skills, Portfolio, ReferencesComponent, Contact],
+  imports: [Navbar, Hero, About, Skills, Portfolio, ReferencesComponent, Contact, Footer],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
