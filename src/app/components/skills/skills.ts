@@ -37,4 +37,10 @@ export class Skills {
     image:'/assets/icons/api.svg'
   }
 ];
+
+scrollToContact(): void {
+  document.getElementById('contact')?.scrollIntoView({
+    behavior: 'smooth'
+  });
+}
 }
