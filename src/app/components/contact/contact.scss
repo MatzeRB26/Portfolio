@@ -1,12 +1,10 @@
 .contact {
     position: relative;
-    padding: 120px;
     overflow-x: clip;
+    top: 200px;
 }
 
 .contact-header {
-    position: relative;
-
     h2 {
         display: flex;
         justify-content: center;
@@ -14,6 +12,7 @@
         font-size: 90px;
         line-height: 120%;
         color: rgba(255, 255, 255, 1);
+        margin-bottom: 80px;
     }
 }
 
@@ -22,7 +21,7 @@
     position: absolute;
     top: 50%;
     left: calc(50% + 210px);
-    right: -100vw;
+    right: -3840px;
     height: 4px;
     transform: translateY(-50%);
     background: rgba(112, 230, 28, 1);
@@ -58,7 +57,7 @@
     right: calc(100% + 28px);
     top: 50%;
     transform: translateY(-50%);
-    width: 100vw;
+    width: 3840px;
     height: 4px;
     border-radius: 0 10px 10px 0;
     background: rgba(28, 218, 230, 1);
@@ -188,11 +187,10 @@
 }
 
 .scroll-top {
-    position: absolute;
-    right: -80px;
-    bottom: 40px;
-    padding: 0;
+    position: relative;
     cursor: pointer;
+    top: 50px;
+    left: 580px;
 
     img {
         width: 39px;
