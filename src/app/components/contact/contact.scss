@@ -148,13 +148,16 @@
     align-items: flex-start;
     gap: 10px;
     margin-top: -8px;
-
-    input {
-        display: none;
+    
+    input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
     }
 }
 
+
 .privacy-checkbox {
+    position: relative;
     width: 18px;
     height: 18px;
     border: 2px solid rgba(112, 230, 28, 1);
@@ -162,11 +165,22 @@
     cursor: pointer;
     flex-shrink: 0;
     transition: .2s;
-
+    
     &:hover {
         background: rgba(112, 230, 28, .15);
     }
 }
+
+.privacy [type="checkbox"]:checked + .privacy-checkbox::after {
+content: "✔";
+color: #70E61C;
+font-size: 14px;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -55%);
+}
+
 
 .privacy-text {
     max-width: 560px;
