@@ -110,7 +110,7 @@
 
         &:hover,
         &:focus {
-            border-color: rgba(112, 230, 28, 1);
+            border-color: rgba(28, 218, 230, 1);
         }
     }
 
@@ -155,7 +155,6 @@
     }
 }
 
-
 .privacy-checkbox {
     position: relative;
     width: 18px;
@@ -181,7 +180,6 @@ top: 50%;
 transform: translate(-50%, -55%);
 }
 
-
 .privacy-text {
     max-width: 560px;
     font-size: 14px;
@@ -190,11 +188,11 @@ transform: translate(-50%, -55%);
 
     a {
         color: rgba(151, 71, 255, 1);
-        text-decoration: none;
         transition: .2s;
 
         &:hover {
-            color: rgba(112, 230, 28, 1);
+            text-decoration: underline;
+            color: rgba(151, 71, 255, 1);
         }
     }
 }
@@ -210,5 +208,10 @@ transform: translate(-50%, -55%);
         width: 39px;
         height: 39px;
         display: block;
+        transition: 0.3s;
+    }
+
+    &:hover img {
+        filter: brightness(0) saturate(100%) invert(74%) sepia(95%) saturate(1144%) hue-rotate(42deg) brightness(98%) contrast(89%);
     }
 }
