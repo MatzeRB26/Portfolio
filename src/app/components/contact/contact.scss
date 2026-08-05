@@ -4,6 +4,16 @@
     padding-bottom: 250px;
 }
 
+.contact-shadow {
+    position: absolute;
+    left: 950px;
+    width: 681px;
+    height: 1127px;
+    pointer-events: none;
+
+}
+
+
 .contact-header {
     h2 {
         display: flex;
