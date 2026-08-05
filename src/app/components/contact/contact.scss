@@ -215,3 +215,19 @@ transform: translate(-50%, -55%);
         filter: brightness(0) saturate(100%) invert(74%) sepia(95%) saturate(1144%) hue-rotate(42deg) brightness(98%) contrast(89%);
     }
 }
+
+.error {
+    margin-top: -16px;
+    font-size: 14px;
+    color: #E61C40;
+}
+
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+    border: 1px solid #E61C40;
+}
+
+input.ng-valid.ng-touched,
+textarea.ng-valid.ng-touched {
+    border: 1px solid #70E61C;
+}

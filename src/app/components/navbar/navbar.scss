@@ -21,7 +21,7 @@ header {
 .logo {
     font-size: 35px;
     font-weight: 700;
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 1);
 }
 
 .navigation {
@@ -40,7 +40,7 @@ nav {
         font-size: 23px;
         font-weight: 400;
         line-height: 120%;
-        color: #FFFFFF;
+        color: rgba(255, 255, 255, 1);
         transition: color .2s ease;
         &:hover {
             color: rgba(112, 230, 28, 1);
