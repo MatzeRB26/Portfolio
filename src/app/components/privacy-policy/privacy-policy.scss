@@ -1,4 +1,4 @@
-.legal-notice {
+.privacy-policy {
     font-family: "Open Sans";
     background: rgba(20, 29, 47, 1);
     color: rgba(255, 255, 255, 1);
@@ -16,7 +16,7 @@
             font-size: 61px;
             font-weight: 700;
             line-height: 120%;
-            color: #70e61c;
+            color: rgba(112, 230, 28, 1);
             flex-shrink: 0;
         }
 
@@ -41,17 +41,9 @@
         width: 100%;
     }
 
-    h2 {
-        color: rgba(151, 71, 255, 1);
-        font-size: 33px;
-        font-weight: 700;
-        margin-bottom: 14px;
-        line-height: 120%;
-    }
-
     h3 {
         color: rgba(151, 71, 255, 1);
-        font-size: 19px;
+        font-size: 33px;
         font-weight: 700;
         line-height: 120%;
         margin-bottom: 8px;
@@ -62,25 +54,4 @@
         line-height: 120%;
         margin-bottom: 20px;
     }
-
-    span {
-        color: rgba(151, 71, 255, 1);
-    }
-
-    .imprint {
-        margin-bottom: 36px;
-    }
-
-    .section {
-        margin-bottom: 34px;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-
-    .date {
-        margin-top: 18px;
-    }
-
 
