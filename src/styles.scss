@@ -18,8 +18,26 @@ font-weight: 700;
 font-style: normal;
 }
 
-body {
-    font-family: "Poppins", sans-serif;
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../public/assets/fonts/open-sans-v44-latin-regular.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../public/assets/fonts/open-sans-v44-latin-700.woff2') format('woff2'); 
+}
+
+
+  body {
+    font-family: "Poppins", "Open Sans";
     background-color: #141D2F;
     scroll-behavior: smooth;
 }

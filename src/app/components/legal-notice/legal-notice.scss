@@ -1,0 +1,82 @@
+.legal-notice {
+    background: rgb(20, 29, 47);
+    min-height: 100vh;
+    color: white;
+    padding: 168px 0 120px;
+
+    .headline {
+        max-width: 1057px;
+        margin: 0 auto 80px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+
+        h1 {
+            font-size: 61px;
+            font-weight: 700;
+            color: rgb(112, 230, 28);
+            line-height: 120%;
+            white-space: nowrap;
+        }
+
+        .line {
+            height: 4px;
+            border-radius: 4px;
+
+            &.purple {
+                width: 130px;
+                background: rgb(151, 71, 255);
+            }
+
+            &.purple2 {
+                flex: 1;
+                max-width: 500px;
+                background: rgb(151, 71, 255);
+            }
+        }
+    }
+
+    .content {
+        max-width: 968px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    h2 {
+        color: rgb(151, 71, 255);
+        font-size: 33px;
+        font-weight: 700;
+        margin-bottom: 24px;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    h3 {
+        font-size: 19px;
+        font-weight: 700;
+        color: rgb(151, 71, 255);
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 120%;
+        color: white;
+    }
+
+    span {
+        color: rgb(151, 71, 255);
+    }
+
+    .date {
+        margin-top: 24px;
+    }
+}
+
