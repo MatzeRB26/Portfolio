@@ -21,36 +21,35 @@
     <div class="contact-right">
         <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
             <input type="text" placeholder="Your name" formControlName="name"/>
-
             @if(contactForm.get('name')?.touched && contactForm.get('name')?.hasError('required')){
             <p class="error">Your name is required</p>
           }
-
+          
             <input type="email" placeholder="Your email" formControlName="email"/>
-
             @if(contactForm.get('email')?.touched && contactForm.get('email')?.hasError('required')){
             <p class="error">Your email is required</p>
           }
-            @if(contactForm.get('email')?.touched && contactForm.get('email')?.hasError('email')){
-            <p class="error">Please enter a valid email</p>
-          }
-
+            
             <textarea placeholder="Your message" formControlName="message"></textarea>
-
             @if(contactForm.get('message')?.touched && contactForm.get('message')?.hasError('required')){
             <p class="error">Your message is empty</p>
           }
-
+          
         <label class="privacy">
             <input type="checkbox" formControlName="privacy"/>
             <span class="privacy-checkbox"></span>
             <span class="privacy-text">
-            I've read the
-            <a routerLink="/privacy-policy"> privacy policy </a>
-            and agree to the processing of my data as outlined.
+              I've read the
+              <a routerLink="/privacy-policy"> privacy policy</a>
+              and agree to the processing of my data as outlined.
             </span>
-        </label>
-            <button type="submit" [disabled]="contactForm.invalid">Send message :)</button>
+          </label>
+          <div class="error-container">
+          @if(contactForm.get('privacy')?.invalid && contactForm.get('privacy')?.touched) {
+          <p class="error">Please accept the privacy policy</p>
+        }
+        </div>
+          <button type="submit" [class.valid]="contactForm.valid">Send message :)</button>
         </form>
         <a href="#" class="scroll-top">
           <img src="assets/icons/go-up-button.svg" alt="Scroll to top" />
