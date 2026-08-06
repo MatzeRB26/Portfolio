@@ -23,7 +23,7 @@
             </button>
             <div class="references-dots">
                 @for (reference of references(); track $index; let i = $index) {
-                    <button class="references-dot" type="button" [class.references-dot--active]="i === currentReference()" (click)="setCurrentReference(i)" [attr.aria-label]="'Reference' + (i + 1)"></button>
+                    <button class="references-dot" type="button" [class.references-dot--active]="i === currentReference()" (click)="setCurrentReference(i)" [attr.aria-label]="getReferenceLabel(i)"></button>
                 }
             </div>
             <button class="references-arrow" type="button" aria-label="Next reference" (click)="nextReference()">

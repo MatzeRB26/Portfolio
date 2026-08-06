@@ -45,4 +45,7 @@ export class ReferencesComponent {
   setCurrentReference(index: number): void {
     this.currentReference.set(index);
   }
+  getReferenceLabel(index: number): string {
+  return `Reference ${index + 1}`;
+}
 }
