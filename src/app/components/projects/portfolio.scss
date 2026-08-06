@@ -83,6 +83,104 @@
     background: rgba(20, 29, 47, 1);
     border: 1px solid rgba(112, 230, 28, 1);
     border-radius: 15px;
+
+  &-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center; 
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.35s ease, visibility 0.35s ease;
+    z-index: 1;
+  }
+
+  &:hover &-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &-actions {
+    display: flex;
+    justify-content: center;
+    gap: 88px;
+    margin-bottom: 180px;
+    transform: scale(0.3);
+    transition: transform 0.35s ease;
+  }
+
+  &-content {
+    width: 100%;
+    min-height: 50%;
+    background: white;
+    border-radius: 15px;
+    padding: 32px 24px 28px;
+    text-align: center;
+    transform: scale(0.3);
+    transition: transform 0.35s ease;
+  }
+
+  &:hover &-actions,
+  &:hover &-content {
+    transform: scale(1); 
+  }
+
+  &-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    color: rgba(151, 71, 255, 1);
+    margin: 0 0 16px 0;
+  }
+
+  &-description {
+    font-weight: 400;
+    font-size: 23px; 
+    color: black;
+  }
+
+  &-tags {
+    margin: 20px 15px;
+    font-size: 23px;
+    line-height: 120%;
+    color: rgba(112, 230, 28, 1);
+
+    span {
+      display: inline-block;
+    }
+  }
+}
+
+.btn {
+  width: 137px;
+  height: 58px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+
+  &-primary {
+    background-color: rgba(151, 71, 255, 1);
+    color: rgba(255, 255, 255, 1);
+  }
+  &-primary:hover{
+    background-color: rgba(112, 230, 28, 1);
+  }
+
+  &-github {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(28, 218, 230, 1);
+  }
+
+  &-github:hover{
+    background-color: rgba(28, 218, 230, 1);
+  }
 }
 
 .project-shadow {
@@ -101,106 +199,3 @@
     object-fit: contain;
 }
 
-// ------------------------------------------
-
-.project-card {
-  position: relative;
-  border-radius: 16px;
-  overflow: hidden; // Schneidet überstehende Ecken unten ab
-
-  &__overlay {
-    position: absolute;
-    inset: 0;
-    /* FIX 1: Alles nach unten ausrichten statt mit "space-between" auseinanderzuziehen */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end; 
-    align-items: center;
-    /* Kein seitliches Padding im Overlay, damit die weiße Karte 100% Breite hat */
-    padding: 0; 
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.35s ease, visibility 0.35s ease;
-  }
-
-  &:hover &__overlay {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  /* FIX 2: BUTTONS - Sitzen jetzt mit festem Abstand genau über der Karte */
-  &__actions {
-    display: flex;
-    gap: 80px;
-    margin-bottom: 20px; // Fester Abstand zur weißen Karte
-    z-index: 2;
-    transform: translateY(-10px);
-    transition: transform 0.35s ease;
-  }
-
-  /* FIX 3: WEISSE KARTE - 100% Breite, volle Deckkraft & abgerundete Ecken oben */
-  &__content {
-    width: 100%;
-    background: white;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    padding: 32px 24px 28px;
-    text-align: center;
-    transform: translateY(40px);
-    transition: transform 0.35s ease;
-  }
-
-  &__title {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 120%;
-    color: rgba(151, 71, 255, 1);
-    margin: 0 0 16px 0;
-  }
-
-  &__description {
-    font-weight: 400;
-    font-size: 23px;
-    line-height: 120%;
-    color: black;
-    margin: 0 0 20px 0;
-  }
-
-  &__tags {
-    font-weight: 400;
-    font-size: 23px;
-    line-height: 120%;
-    color: rgba(112, 230, 28, 1);
-  }
-}
-
-/* Button Base Styles */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px 30px;
-  border-radius: 10px;
-  gap: 10px;
-  font-weight: 600;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: transform 0.2s ease, background-color 0.2s ease, opacity 0.2s ease;
-
-  &--primary {
-    background-color: rgba(151, 71, 255, 1);
-    color: white;
-    border: none;
-  }
-
-  &--github {
-    background-color: transparent;
-    color: white;
-    border: 2px solid white;
-  }
-
-  &:hover {
-    opacity: 0.9;
-    transform: translateY(-2px);
-  }
-}
