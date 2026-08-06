@@ -1,5 +1,5 @@
 .about {
-    background: #141d2f;
+    background: rgba(20, 29, 47, 1);
     padding: 100px;
 }
 
@@ -25,14 +25,14 @@ h2 {
     font-size: 90px;
     font-weight: 700;
     line-height: 120%;
-    color: white;
-}
+    color: rgba(255, 255, 255, 1);
+    }
 
 .about-intro {
     margin: 0;
     font-size: 16px;
     line-height: 120%;
-    color: white;
+    color: rgba(255, 255, 255, 1);
 }
 
 .about-list {
@@ -54,7 +54,7 @@ h2 {
 
     p {
         margin: 0;
-        color: white;
+        color: rgba(255, 255, 255, 1);
         font-size: 16px;
         line-height: 120%;
     }

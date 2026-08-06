@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #141D2F;
+    background: rgba(20, 29, 47, 1)
 }
 
 .hero-inner {
@@ -32,7 +32,7 @@
     transform: rotate(180deg);
     font-size: 90px;
     font-weight: 400;
-    color: white;
+    color: rgba(255, 255, 255, 1);
 }
 
 .hero-text {
@@ -45,13 +45,13 @@
     font-size: 110px;
     font-weight: 700;
     line-height: 120%;
-    color: white;
+    color: rgba(255, 255, 255, 1);
 }
 
 .hero-text h2 {
     font-size: 64px;
     font-weight: 400;
-    color: #9747FF;
+    color: rgba(151, 71, 255, 1);
 }
 
 .primary-btn {
@@ -59,8 +59,8 @@
     height: 58px;
     border: none;
     border-radius: 10px;
-    background: #70E61C;
-    color: white;
+    background: rgba(112, 230, 28, 1);
+    color: rgba(255, 255, 255, 1);
     font-size: 23px;
     cursor: pointer;
     transition:
@@ -70,7 +70,7 @@
 }
 
 .primary-btn:hover {
-    background: #9747FF;
+    background: rgba(151, 71, 255, 1);
     transform: scale(1.08);
 }
 
@@ -85,7 +85,7 @@
     position: relative;
     width: 100px;
     height: 4px;
-    background: #70E61C;
+    background: rgba(112, 230, 28, 1);
     margin-right: 42px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -98,7 +98,7 @@
     right: 100%;
     width: 3850px;
     height: 4px;
-    background: #70E61C;
+    background: rgba(112, 230, 28, 1);
 }
 
 .social-icons {
@@ -133,7 +133,7 @@
     font-size: 23px;
     font-weight: 400;
     line-height: 120%;
-    color: white;
+    color: rgba(255, 255, 255, 1);
 }
 
 .scroll-down img {

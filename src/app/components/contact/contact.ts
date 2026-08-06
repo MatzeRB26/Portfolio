@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import {  FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -9,28 +9,21 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
   templateUrl: './contact.html',
   styleUrl: './contact.scss',
 })
-export class Contact {
-  contactForm!: FormGroup;
-  constructor(private fb: FormBuilder) {
-    this.contactForm = this.fb.group({
-      name: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]],
-      message: ['', Validators.required],
-      privacy: [false, Validators.requiredTrue],
-    });
-  }
 
-onSubmit() {
-  if (this.contactForm.invalid) {
-    this.contactForm.markAllAsTouched();
-    return;
-  }
-  this.contactForm.reset({
-    name: '',
-    email: '',
-    message: '',
-    privacy: false
+export class Contact {
+  contactForm = new FormGroup({
+    name: new FormControl('', Validators.required),
+    email: new FormControl('', [Validators.required,Validators.email]),
+    message: new FormControl('', Validators.required),
+    privacy: new FormControl(false, Validators.requiredTrue)
   });
-}
+
+  onSubmit() {
+    if (this.contactForm.invalid) {
+      this.contactForm.markAllAsTouched();
+      return;
+    }
+    this.contactForm.reset();
+  }
 }
 

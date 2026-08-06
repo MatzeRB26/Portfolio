@@ -31,7 +31,7 @@
 
 .portfolio-header h2 {
     margin: 0;
-    color: white;
+    color: rgba(255, 255, 255, 1);
     font-size: 90px;
     font-weight: 700;
     line-height: 120%;
@@ -44,7 +44,7 @@
     transform: translateY(-50%);
     width: 68px;
     height: 4px;
-    background: #9747FF;
+    background: rgba(151, 71, 255, 1);
     border-radius: 0 10px 10px 0;
 }
 
@@ -55,13 +55,13 @@
     top: 0;
     width: 4000px;
     height: 4px;
-    background: #9747FF;
+    background: rgba(151, 71, 255, 1);
 }
 
 .portfolio-description {
     width: 473px;
     margin: 0 0 56px;
-    color: white;
+    color: rgba(255, 255, 255, 1);
     font-size: 16px;
     font-weight: 400;
     line-height: 120%;
@@ -80,24 +80,127 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    background: #141D2F;
-    border: 1px solid #70E61C;
+    background: rgba(20, 29, 47, 1);
+    border: 1px solid rgba(112, 230, 28, 1);
     border-radius: 15px;
-    transition: border-color .3s ease;
 }
 
 .project-shadow {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: auto;
-    height: auto;
+    width: 587px;
+    height: 276px;
     border-radius: 15px;
 }
 
 .project-card img {
     display: block;
-    width: 92%;
+    width: 100%;
     height: auto;
     object-fit: contain;
+}
+
+// ------------------------------------------
+
+.project-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden; // Schneidet überstehende Ecken unten ab
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    /* FIX 1: Alles nach unten ausrichten statt mit "space-between" auseinanderzuziehen */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: center;
+    /* Kein seitliches Padding im Overlay, damit die weiße Karte 100% Breite hat */
+    padding: 0; 
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.35s ease, visibility 0.35s ease;
+  }
+
+  &:hover &__overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* FIX 2: BUTTONS - Sitzen jetzt mit festem Abstand genau über der Karte */
+  &__actions {
+    display: flex;
+    gap: 80px;
+    margin-bottom: 20px; // Fester Abstand zur weißen Karte
+    z-index: 2;
+    transform: translateY(-10px);
+    transition: transform 0.35s ease;
+  }
+
+  /* FIX 3: WEISSE KARTE - 100% Breite, volle Deckkraft & abgerundete Ecken oben */
+  &__content {
+    width: 100%;
+    background: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 32px 24px 28px;
+    text-align: center;
+    transform: translateY(40px);
+    transition: transform 0.35s ease;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    color: rgba(151, 71, 255, 1);
+    margin: 0 0 16px 0;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 120%;
+    color: black;
+    margin: 0 0 20px 0;
+  }
+
+  &__tags {
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 120%;
+    color: rgba(112, 230, 28, 1);
+  }
+}
+
+/* Button Base Styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  border-radius: 10px;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease, opacity 0.2s ease;
+
+  &--primary {
+    background-color: rgba(151, 71, 255, 1);
+    color: white;
+    border: none;
+  }
+
+  &--github {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+  }
+
+  &:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+  }
 }
