@@ -1,6 +1,17 @@
 .about {
     background: rgba(20, 29, 47, 1);
-    padding: 100px;
+
+    @media (max-width: 1024px) {
+        padding: 80px 0;
+    }
+
+    @media (max-width: 768px) {
+        padding: 60px 0;
+    }
+
+    @media (max-width: 480px) {
+        padding: 40px 0;
+    }
 }
 
 .about-container {
@@ -11,6 +22,27 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    z-index: 2;
+
+    @media (max-width: 1024px) {
+        padding: 0 40px;
+        gap: 40px;
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column; // Elemente untereinander anordnen
+        padding: 0 24px;
+        gap: 40px;
+    }
+
+    @media (max-width: 480px) {
+        padding: 0 16px;
+        gap: 32px;
+    }
+
+    @media (max-width: 320px) {
+        padding: 0 12px;
+    }
 }
 
 .about-content {
@@ -18,6 +50,34 @@
     display: flex;
     flex-direction: column;
     gap: 35px;
+
+    @media (max-width: 1024px) {
+        width: 50%;
+        gap: 28px;
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        gap: 24px;
+        order: 2; // Rückt den Text-Block an die 2. Stelle (nach unten)
+    }
+}
+
+.about-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    @media (max-width: 1024px) {
+        width: 45%;
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        max-width: 450px;
+        order: 1; // Rückt das Bild an die 1. Stelle (nach oben)
+    }
 }
 
 h2 {
@@ -26,19 +86,47 @@ h2 {
     font-weight: 700;
     line-height: 120%;
     color: rgba(255, 255, 255, 1);
+
+    @media (max-width: 1024px) {
+        font-size: 70px;
     }
+
+    @media (max-width: 768px) {
+        font-size: 52px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 38px;
+    }
+
+    @media (max-width: 320px) {
+        font-size: 30px;
+    }
+}
 
 .about-intro {
     margin: 0;
     font-size: 16px;
     line-height: 120%;
     color: rgba(255, 255, 255, 1);
+
+    @media (max-width: 480px) {
+        font-size: 15px;
+    }
 }
 
 .about-list {
     display: flex;
     flex-direction: column;
     gap: 35px;
+
+    @media (max-width: 1024px) {
+        gap: 24px;
+    }
+
+    @media (max-width: 480px) {
+        gap: 20px;
+    }
 }
 
 .about-item {
@@ -50,6 +138,12 @@ h2 {
         width: 30px;
         height: 30px;
         flex-shrink: 0;
+        transition: transform 0.2s ease;
+
+        @media (max-width: 480px) {
+            width: 24px;
+            height: 24px;
+        }
     }
 
     p {
@@ -57,6 +151,10 @@ h2 {
         color: rgba(255, 255, 255, 1);
         font-size: 16px;
         line-height: 120%;
+
+        @media (max-width: 480px) {
+            font-size: 14px;
+        }
     }
 }
 
@@ -69,19 +167,34 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+
+    @media (max-width: 1024px) {
+        width: 45%;
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        max-width: 450px;
+    }
 }
 
 .about-glow {
     position: absolute;
     width: 634px;
+
+    @media (max-width: 1024px) {
+        width: 100%;
+    }
 }
 
 .about-person {
     position: relative;
     width: 593px;
     top: 30px;
+
+    @media (max-width: 1024px) {
+        width: 100%;
+        top: 0;
+    }
 }
 
-.about-me {
-    position: relative;
-}
