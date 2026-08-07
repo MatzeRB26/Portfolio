@@ -30,7 +30,7 @@
     }
 
     @media (max-width: 768px) {
-        flex-direction: column; // Elemente untereinander anordnen
+        flex-direction: column; 
         padding: 0 24px;
         gap: 40px;
     }
@@ -59,7 +59,7 @@
     @media (max-width: 768px) {
         width: 100%;
         gap: 24px;
-        order: 2; // Rückt den Text-Block an die 2. Stelle (nach unten)
+        order: 2; 
     }
 }
 
@@ -76,7 +76,7 @@
     @media (max-width: 768px) {
         width: 100%;
         max-width: 450px;
-        order: 1; // Rückt das Bild an die 1. Stelle (nach oben)
+        order: 1; 
     }
 }
 
