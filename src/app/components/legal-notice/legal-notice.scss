@@ -1,56 +1,142 @@
 .legal-notice {
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     background: rgba(20, 29, 47, 1);
     color: rgba(255, 255, 255, 1);
-    padding: 100px 0 80px;
+    padding: 140px 0 80px; 
+    width: 100%;
+
+    @media (max-width: 1024px) {
+        padding: 120px 0 60px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 100px 0 50px;
+    }
+
+    @media (max-width: 480px) {
+        padding: 90px 0 40px;
     }
 
     .headline {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    width: min(1057px, calc(100% - 80px));
-    margin: 0 auto 72px;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        width: min(1057px, calc(100% - 80px));
+        margin: 0 auto 72px;
+        position: relative;
+
+        @media (max-width: 1024px) {
+            margin-bottom: 52px;
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            width: calc(100% - 48px);
+            margin-bottom: 40px;
+            gap: 16px;
+        }
+
+        @media (max-width: 480px) {
+            width: calc(100% - 32px);
+            margin-bottom: 32px;
+            gap: 12px;
+        }
+
+        @media (max-width: 320px) {
+            width: calc(100% - 24px);
+        }
     }
 
     h1 {
-    font-size: 61px;
-    font-weight: 700;
-    line-height: 120%;
-    color: rgba(112, 230, 28, 1);
-    flex-shrink: 0;
+        font-size: 61px;
+        font-weight: 700;
+        line-height: 120%;
+        color: rgba(112, 230, 28, 1);
+        flex-shrink: 0;
+        margin: 0;
+
+        @media (max-width: 1024px) {
+            font-size: 48px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 38px;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 28px;
+        }
+
+        @media (max-width: 320px) {
+            font-size: 24px;
+        }
     }
 
     .line {
-    height: 4px;
-    background: rgba(151, 71, 255, 1);
-    
+        height: 4px;
+        background: rgba(151, 71, 255, 1);
 
-    &.purple {
-    width: 130px;
-    }
+        &.purple {
+            width: 130px;
+            flex-shrink: 0;
 
-    &.purple2 {
-    content: '';
-    position: absolute;
-    left: calc(55%);
-    width: 900px;
-    height: 4px;
-    }
+            @media (max-width: 768px) {
+                width: 60px;
+            }
+
+            @media (max-width: 480px) {
+                width: 30px;
+            }
+
+            @media (max-width: 320px) {
+                display: none; 
+            }
+        }
+
+        &.purple2 {
+            position: static;
+            flex: 1;
+            height: 4px;
+            border-radius: 0 10px 10px 0;
+        }
     }
 
     .content {
         max-width: 968px;
         margin: 0 auto;
         width: 100%;
+        padding: 0 40px;
+        box-sizing: border-box;
+
+        @media (max-width: 768px) {
+            padding: 0 24px;
+        }
+
+        @media (max-width: 480px) {
+            padding: 0 16px;
+        }
+
+        @media (max-width: 320px) {
+            padding: 0 12px;
+        }
     }
 
     h2 {
         color: rgba(151, 71, 255, 1);
         font-size: 33px;
         font-weight: 700;
+        margin-top: 0;
         margin-bottom: 14px;
         line-height: 120%;
+
+        @media (max-width: 768px) {
+            font-size: 26px;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
     }
 
     h3 {
@@ -58,19 +144,44 @@
         font-size: 19px;
         font-weight: 700;
         line-height: 120%;
+        margin-top: 0;
         margin-bottom: 8px;
+
+        @media (max-width: 768px) {
+            font-size: 17px;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 16px;
+        }
+    }
+
+    ul {
+        padding-left: 0;
+        list-style: none;
+        margin-top: 0;
+        margin-bottom: 20px;
     }
 
     li {
         font-size: 16px;
-        line-height: 120%;
-        margin-bottom: 20px;
+        line-height: 140%;
+
+        @media (max-width: 480px) {
+            font-size: 14px;
+        }
     }
 
     p {
         font-size: 16px;
-        line-height: 120%;
+        line-height: 140%;
+        margin-top: 0;
         margin-bottom: 20px;
+
+        @media (max-width: 480px) {
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
     }
 
     span {
@@ -79,10 +190,18 @@
 
     .imprint {
         margin-bottom: 36px;
+
+        @media (max-width: 480px) {
+            margin-bottom: 24px;
+        }
     }
 
     .section {
         margin-bottom: 34px;
+
+        @media (max-width: 480px) {
+            margin-bottom: 24px;
+        }
 
         &:last-child {
             margin-bottom: 0;
@@ -92,3 +211,4 @@
     .date {
         margin-top: 18px;
     }
+}

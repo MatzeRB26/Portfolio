@@ -1,5 +1,6 @@
 .about {
     background: rgba(20, 29, 47, 1);
+    padding: 230px 0px;
 
     @media (max-width: 1024px) {
         padding: 80px 0;
@@ -10,6 +11,10 @@
     }
 
     @media (max-width: 480px) {
+        padding: 40px 0;
+    }
+
+    @media (max-width: 320px) {
         padding: 40px 0;
     }
 }
