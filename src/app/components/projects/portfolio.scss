@@ -45,7 +45,9 @@
     right: 350px;
     width: 590px;
     height: 608px;
-    background: url("/assets/images/blue-shadow-skills-right.png") no-repeat center;
+    background-image: url("/assets/images/blue-shadow-skills-right.png");
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: contain;
 
     @media (max-width: 1200px) {
