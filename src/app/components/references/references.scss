@@ -168,8 +168,6 @@
         height: 272px;
         border: 4px solid rgba(112, 230, 28, 1);
         border-radius: 50%;
-        box-sizing: border-box;
-        overflow: hidden;
         flex-shrink: 0;
 
         @media (max-width: 1024px) {
