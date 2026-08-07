@@ -10,9 +10,9 @@
         <div class="navigation" [class.open]="isMenuOpen">
             <nav>
                 <ul>
-                    <li><a href="#about">About me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about" (click)="closeMenu()">About me</a></li>
+                    <li><a href="#skills" (click)="closeMenu()">Skills</a></li>
+                    <li><a href="#portfolio" (click)="closeMenu()">Portfolio</a></li>
                 </ul>
             </nav>
             <div class="language-switch">
