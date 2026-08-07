@@ -1,7 +1,13 @@
 <header>
     <div class="content">
         <a class="logo" href="#">Matthäus</a>
-        <div class="navigation">
+
+        <button class="burger-btn" (click)="toggleMenu()" [class.open]="isMenuOpen">
+            <img src="assets/icons/burger-menu.svg" alt="Menu" />
+        </button>
+
+
+        <div class="navigation" [class.open]="isMenuOpen">
             <nav>
                 <ul>
                     <li><a href="#about">About me</a></li>
