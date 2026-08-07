@@ -3,7 +3,11 @@
         <a class="logo" href="#">Matthäus</a>
 
         <button class="burger-btn" (click)="toggleMenu()" [class.open]="isMenuOpen">
-            <img src="assets/icons/burger-menu.svg" alt="Menu" />
+            @if (isMenuOpen) {
+                <img class="closeX" src="assets/icons/close.svg" alt="Schließen">
+            } @else {
+                <img src="assets/icons/burger-menu.svg" alt="Menü öffnen">
+            }
         </button>
 
 
