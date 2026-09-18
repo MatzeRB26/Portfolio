@@ -29,7 +29,7 @@
     }
 
     @media (max-width: 768px) {
-        display: none; // Blendet großen Hintergrund-Schatten auf Mobile aus
+        display: none; 
     }
 }
 
@@ -198,7 +198,7 @@
         margin-bottom: 20px;
 
         br {
-            display: none; // Verhindert unschöne Zeilenumbrüche auf Handys
+            display: none; 
         }
     }
 }
@@ -237,7 +237,7 @@
 
     input,
     textarea {
-        width: 100%; // Flüssige Anpassung statt starrer 617px
+        width: 100%; 
         box-sizing: border-box;
         background: rgba(20, 29, 47, 1);
         border: 1px solid rgba(151, 71, 255, 1);
@@ -354,7 +354,8 @@
 
 .privacy-text {
     max-width: 560px;
-    font-size: 14px;
+    font-size: 16px;
+    white-space: nowrap;
     line-height: 120%;
     color: rgba(255, 255, 255, 1);
 
@@ -406,7 +407,7 @@
 
 .error {
     margin-top: -16px;
-    font-size: 14px;
+    font-size: 16px;
     color: #E61C40;
 
     @media (max-width: 480px) {
