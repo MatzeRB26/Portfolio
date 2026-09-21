@@ -2,9 +2,8 @@
     font-family: "Open Sans", sans-serif;
     background: rgba(20, 29, 47, 1);
     color: rgba(255, 255, 255, 1);
-    padding: 140px 0 80px; // Ausgleich für fixed Header
+    padding: 100px 0 80px; 
     width: 100%;
-    box-sizing: border-box;
     overflow-x: clip;
 
     @media (max-width: 1024px) {
