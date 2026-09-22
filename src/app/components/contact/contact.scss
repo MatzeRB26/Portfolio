@@ -1,19 +1,13 @@
+@use '../../../styles/abstracts/mixins' as *;
+
 .contact {
     position: relative;
     overflow-x: clip;
     padding-bottom: 250px;
 
-    @media (max-width: 1024px) {
-        padding-bottom: 180px;
-    }
-
-    @media (max-width: 768px) {
-        padding-bottom: 120px;
-    }
-
-    @media (max-width: 480px) {
-        padding-bottom: 80px;
-    }
+    @include respond(1024px) { padding-bottom: 180px; }
+    @include respond(768px)  { padding-bottom: 120px; }
+    @include respond(480px)  { padding-bottom: 80px; }
 }
 
 .contact-shadow {
@@ -23,12 +17,12 @@
     height: 1000px;
     pointer-events: none;
 
-    @media (max-width: 1440px) {
+    @include respond(1440px) {
         right: -300px;
         left: auto;
     }
 
-    @media (max-width: 768px) {
+    @include respond(768px) {
         display: none;
     }
 }
@@ -45,24 +39,10 @@
         color: rgba(255, 255, 255, 1);
         margin-bottom: 80px;
 
-        @media (max-width: 1024px) {
-            font-size: 70px;
-            margin-bottom: 60px;
-        }
-
-        @media (max-width: 768px) {
-            font-size: 52px;
-            margin-bottom: 40px;
-        }
-
-        @media (max-width: 480px) {
-            font-size: 38px;
-            margin-bottom: 32px;
-        }
-
-        @media (max-width: 320px) {
-            font-size: 30px;
-        }
+        @include respond(1024px) { font-size: 70px; margin-bottom: 60px; }
+        @include respond(768px)  { font-size: 52px; margin-bottom: 40px; }
+        @include respond(480px)  { font-size: 38px; margin-bottom: 32px; }
+        @include respond(320px)  { font-size: 30px; }
     }
 
     &::after {
@@ -76,21 +56,10 @@
         background: rgba(112, 230, 28, 1);
         border-radius: 10px 0 0 10px;
 
-        @media (max-width: 1024px) {
-            left: calc(50% + 160px);
-        }
-
-        @media (max-width: 768px) {
-            left: calc(50% + 120px);
-        }
-
-        @media (max-width: 480px) {
-            left: calc(50% + 90px);
-        }
-
-        @media (max-width: 320px) {
-            left: calc(50% + 75px);
-        }
+        @include respond(1024px) { left: calc(50% + 160px); }
+        @include respond(768px)  { left: calc(50% + 120px); }
+        @include respond(480px)  { left: calc(50% + 90px); }
+        @include respond(320px)  { left: calc(50% + 75px); }
     }
 }
 
@@ -102,40 +71,18 @@
     gap: 120px;
     padding: 0 100px;
 
-    @media (max-width: 1280px) {
-        gap: 60px;
-        padding: 0 40px;
-    }
-
-    @media (max-width: 1024px) {
-        flex-direction: column;
-        align-items: center;
-        gap: 48px;
-        padding: 0 40px;
-    }
-
-    @media (max-width: 768px) {
-        padding: 0 24px;
-        gap: 40px;
-    }
-
-    @media (max-width: 480px) {
-        padding: 0 16px;
-        gap: 32px;
-    }
-
-    @media (max-width: 320px) {
-        padding: 0 12px;
-    }
+    @include respond(1280px) { gap: 60px; padding: 0 40px; }
+    @include respond(1024px) { flex-direction: column; align-items: center; gap: 48px; padding: 0 40px; }
+    @include respond(768px)  { padding: 0 24px; gap: 40px; }
+    @include respond(480px)  { padding: 0 16px; gap: 32px; }
+    @include respond(320px)  { padding: 0 12px; }
 }
 
 .contact-left {
     max-width: 500px;
     width: 100%;
 
-    @media (max-width: 1024px) {
-        max-width: 617px;
-    }
+    @include respond(1024px) { max-width: 617px; }
 }
 
 .contact-subtitle {
@@ -144,9 +91,7 @@
     margin-bottom: 35px;
     position: relative;
 
-    @media (max-width: 768px) {
-        margin-bottom: 24px;
-    }
+    @include respond(768px) { margin-bottom: 24px; }
 
     h3 {
         margin: 0;
@@ -155,17 +100,9 @@
         line-height: 120%;
         color: rgba(255, 255, 255, 1);
 
-        @media (max-width: 1024px) {
-            font-size: 28px;
-        }
-
-        @media (max-width: 480px) {
-            font-size: 22px;
-        }
-
-        @media (max-width: 320px) {
-            font-size: 18px;
-        }
+        @include respond(1024px) { font-size: 28px; }
+        @include respond(480px)  { font-size: 22px; }
+        @include respond(320px)  { font-size: 18px; }
     }
 }
 
@@ -180,9 +117,7 @@
     border-radius: 0 10px 10px 0;
     background: rgba(28, 218, 230, 1);
 
-    @media (max-width: 480px) {
-        right: calc(100% + 16px);
-    }
+    @include respond(480px) { right: calc(100% + 16px); }
 }
 
 .contact-text {
@@ -192,13 +127,11 @@
     line-height: 120%;
     color: rgba(255, 255, 255, 1);
 
-    @media (max-width: 480px) {
+    @include respond(480px) {
         font-size: 15px;
         margin-bottom: 20px;
 
-        br {
-            display: none;
-        }
+        br { display: none; }
     }
 }
 
@@ -209,23 +142,16 @@
     line-height: 120%;
     color: rgba(255, 255, 255, 1);
 
-    span {
-        font-weight: 700;
-    }
+    span { font-weight: 700; }
 
-    @media (max-width: 480px) {
-        font-size: 15px;
-    }
+    @include respond(480px) { font-size: 15px; }
 }
 
 .contact-right {
     width: 617px;
     position: relative;
 
-    @media (max-width: 1024px) {
-        width: 100%;
-        max-width: 617px;
-    }
+    @include respond(1024px) { width: 100%; max-width: 617px; }
 }
 
 .contact-form {
@@ -247,36 +173,23 @@
         font-size: 16px;
         transition: .2s;
 
-        &::placeholder {
-            color: rgba(255, 255, 255, 1);
-        }
+        &::placeholder { color: rgba(255, 255, 255, 1); }
 
         &:hover,
-        &:focus {
-            border-color: rgba(28, 218, 230, 1);
-        }
+        &:focus { border-color: rgba(28, 218, 230, 1); }
 
-        @media (max-width: 480px) {
-            padding: 12px 16px;
-            font-size: 14px;
-        }
+        @include respond(480px) { padding: 12px 16px; font-size: 14px; }
     }
 
     input {
         height: 50px;
-
-        @media (max-width: 480px) {
-            height: 44px;
-        }
+        @include respond(480px) { height: 44px; }
     }
 
     textarea {
         height: 202px;
         resize: none;
-
-        @media (max-width: 480px) {
-            height: 150px;
-        }
+        @include respond(480px) { height: 150px; }
     }
 
     button {
@@ -291,17 +204,8 @@
         font-size: 23px;
         cursor: pointer;
 
-        @media (max-width: 480px) {
-            width: 200px;
-            height: 48px;
-            font-size: 18px;
-        }
-
-        @media (max-width: 320px) {
-            width: 170px;
-            height: 42px;
-            font-size: 16px;
-        }
+        @include respond(480px) { width: 200px; height: 48px; font-size: 18px; }
+        @include respond(320px) { width: 170px; height: 42px; font-size: 16px; }
     }
 
     button.invalid {
@@ -336,9 +240,7 @@
     flex-shrink: 0;
     transition: .2s;
 
-    &:hover {
-        background: rgba(112, 230, 28, .15);
-    }
+    &:hover { background: rgba(112, 230, 28, .15); }
 }
 
 .privacy [type="checkbox"]:checked+.privacy-checkbox::after {
@@ -358,9 +260,7 @@
     line-height: 120%;
     color: rgba(255, 255, 255, 1);
 
-    @media (max-width: 480px) {
-        font-size: 12px;
-    }
+    @include respond(480px) { font-size: 12px; }
 
     a {
         color: rgba(151, 71, 255, 1);
@@ -379,13 +279,8 @@
     bottom: -150px;
     cursor: pointer;
 
-    @media (max-width: 1024px) {
-        bottom: -90px;
-    }
-
-    @media (max-width: 480px) {
-        bottom: -60px;
-    }
+    @include respond(1024px) { bottom: -90px; }
+    @include respond(480px)  { bottom: -60px; }
 
     img {
         width: 39px;
@@ -393,10 +288,7 @@
         display: block;
         transition: 0.3s;
 
-        @media (max-width: 480px) {
-            width: 32px;
-            height: 32px;
-        }
+        @include respond(480px) { width: 32px; height: 32px; }
     }
 
     &:hover img {
@@ -409,10 +301,7 @@
     font-size: 16px;
     color: #E61C40;
 
-    @media (max-width: 480px) {
-        font-size: 12px;
-        margin-top: -12px;
-    }
+    @include respond(480px) { font-size: 12px; margin-top: -12px; }
 }
 
 input.ng-invalid.ng-touched,
@@ -459,7 +348,5 @@ textarea.ng-valid.ng-touched {
 }
 
 @keyframes fadeOut {
-    to {
-        opacity: 0;
-    }
+    to { opacity: 0; }
 }
