@@ -35,6 +35,14 @@ export class Skills {
   {
     name: 'Rest-Api',
     image:'assets/icons/api.svg'
+  },
+  {
+    name: 'Scrum',
+    image:'assets/icons/scrum.svg'
+  },
+  {
+    name: 'Supabase',
+    image:'assets/icons/supabase.svg'
   }
 ];
 

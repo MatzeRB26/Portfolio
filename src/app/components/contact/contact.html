@@ -1,4 +1,9 @@
 <section id="contact" class="contact">
+  @if (isSubmitted) {
+    <div class="toast-message">
+      <span>Message sent successfully!</span>
+    </div>
+  }
   <img src="assets/images/purple-shadow-contact.png" alt="" class="contact-shadow" />
   <div class="contact-header">
     <h2>Contact</h2>
