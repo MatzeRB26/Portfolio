@@ -2,18 +2,24 @@ import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [RouterLink, ReactiveFormsModule],
+  imports: [RouterLink, ReactiveFormsModule, TranslatePipe],
   templateUrl: './contact.html',
   styleUrl: './contact.scss',
 })
 export class Contact {
   private http = inject(HttpClient);
+  private translate = inject(TranslateService);
   
   isSubmitted = false;
+
+  get isGerman(): boolean {
+    return this.translate.currentLang() === 'de';
+  }
 
   contactForm = new FormGroup({
     name: new FormControl('', Validators.required),
@@ -45,7 +51,7 @@ export class Contact {
       },
       error: (error) => {
         console.error('Error sending:', error);
-        alert('Something went wrong. Please try again later.');
+        alert(this.translate.instant('CONTACT.ERROR_ALERT'));
       }
     });
   }

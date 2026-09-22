@@ -1,53 +1,61 @@
 <section id="portfolio" class="portfolio">
-<div class="portfolio-glow"></div>
-<div class="container">
+    <div class="portfolio-glow"></div>
+    <div class="container">
         <div class="portfolio-header">
             <div class="portfolio-line"></div>
-            <h2>Portfolio</h2>
+            <h2>{{ 'PORTFOLIO.TITLE' | translate }}</h2>
         </div>
         <p class="portfolio-description">
-            Explore a selection of my work here - Interact with projects to see my skills in action.
+            {{ 'PORTFOLIO.DESCRIPTION' | translate }}
         </p>
-    <div class="portfolio-projects">
+        <div class="portfolio-projects">
             <article class="project-card">
                 <img src="assets/images/polo-loco-laptop.png" alt="El Pollo Loco">
-        <div class="project-card-overlay">
-                <div class="project-card-actions">
-                    <a href="https://github.com/MatzeRB26/El_Pollo_Loco" target="_blank" class="btn btn-github">Github</a>
-                    <a href="#" class="btn btn-primary">Live test</a>
-                </div>
-            <div class="project-card-content">
-                    <h3 class="project-card-title">El Pollo Loco</h3>
-                <p class="project-card-description">
-                Jump, run and throw game based on object-oriented approach. 
-                Help Pepe to find coins and tabasco salsa to fight against the crazy hen.
-                </p>
-                <div class="project-card-tags">
-                <span>JavaScript</span> | <span>HTML</span> | <span>CSS</span>
-                </div>
-            </div>
-        </div>
-                <img class="project-shadow" src="assets/images/black-shadow.png" alt="">
-            </article>
-            <article class="project-card">
-                <img src="assets/images/join-laptop.png" alt="Join">
                 <div class="project-card-overlay">
-                <div class="project-card-actions">
-                    <a href="https://github.com/MatzeRB26/Join" target="_blank" class="btn btn-github">Github</a>
-                    <a href="#" class="btn btn-primary">Live test</a>
+                    <div class="project-card-actions">
+                        <a href="https://github.com/MatzeRB26/El_Pollo_Loco" target="_blank" class="btn btn-github">
+                            {{ 'PORTFOLIO.GITHUB' | translate }}
+                        </a>
+                        <a href="#" class="btn btn-primary">
+                            {{ 'PORTFOLIO.LIVE_TEST' | translate }}
+                        </a>
+                    </div>
+                    <div class="project-card-content">
+                        <h3 class="project-card-title">El Pollo Loco</h3>
+                        <p class="project-card-description">
+                            {{ 'PORTFOLIO.POLLO_LOCO_DESC' | translate }}
+                        </p>
+                        <div class="project-card-tags">
+                            <span>JavaScript</span> | <span>HTML</span> | <span>CSS</span>
+                        </div>
+                    </div>
                 </div>
-            <div class="project-card-content">
-                    <h3 class="project-card-title">Join</h3>
-                <p class="project-card-description">
-                Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. 
-                </p>
-                <div class="project-card-tags">
-                <span>Angular</span> | <span>Typescript</span> | <span>HTML</span> | <span>CSS</span> | <span>Firebase</span>
+            </article>
+            <img class="project-shadow" src="assets/images/black-shadow.png" alt="">
+            
+            <article class="project-card">
+                <img class="laptop" src="assets/images/join-laptop.png" alt="Join">
+                <div class="project-card-overlay">
+                    <div class="project-card-actions">
+                        <a href="https://github.com/MatzeRB26/Join" target="_blank" class="btn btn-github">
+                            {{ 'PORTFOLIO.GITHUB' | translate }}
+                        </a>
+                        <a href="#" class="btn btn-primary">
+                            {{ 'PORTFOLIO.LIVE_TEST' | translate }}
+                        </a>
+                    </div>
+                    <div class="project-card-content">
+                        <h3 class="project-card-title">Join</h3>
+                        <p class="project-card-description">
+                            {{ 'PORTFOLIO.JOIN_DESC' | translate }}
+                        </p>
+                        <div class="project-card-tags">
+                            <span>Angular</span> | <span>Typescript</span> | <span>HTML</span> | <span>CSS</span> | <span>Firebase</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
                 <img class="project-shadow" src="assets/images/black-shadow.png" alt="">
             </article>
+        </div>
     </div>
-</div>
 </section>

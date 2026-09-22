@@ -1,0 +1,76 @@
+{
+    "NAVBAR": {
+        "ABOUT": "About me",
+        "SKILLS": "Skills",
+        "PORTFOLIO": "Portfolio"
+    },
+    "HERO": {
+        "INTRO": "I am",
+        "LETSTALK": "Let's talk!",
+        "SCROLL": "Scroll down"
+    },
+    "ABOUT": {
+        "TITLE": "About me",
+        "INTRO_P1": "Hey there, I'm Matthäus!",
+        "INTRO_P2": "Write some information about yourself that is IT related. Why are you passionate about coding? What is your source of inspiration for improving your programming skills?",
+        "INTRO_P3": "Let's connect and create something amazing together!",
+        "LOCATION": "Where are you located? Are you open to different ways of working, such as working remotely or even relocating?",
+        "LEARNING": "Show that you are open-minded. Are you enthusiastic about learning new technologies and continually improving your skills?",
+        "PROBLEM": "A brief description of your problem-solving approach. Do you learn from each challenge as you search for the most efficient or elegant solution? You can include some keywords like: analytical thinking, creativity, persistence and collaboration."
+    },
+    "SKILLS": {
+        "TITLE": "Skills",
+        "DESCRIPTION": "Highlight your experience of working on different projects using different front-end technologies (such as HTML, CSS, JavaScript, etc.) and emphasise your openness to learning and adapting to new technologies.",
+        "EDUCATION_NOTE": "Mention the importance of continuing education to keep up with the rapid changes in web development.",
+        "SUBTITLE_PART1": "Looking for",
+        "SUBTITLE_PART2": "another skill?",
+        "SUBTITLE_TEXT": "Reveal enthusiasm for learning new technologies and frameworks.",
+        "BUTTON": "Get in touch"
+    },
+    "PORTFOLIO": {
+        "TITLE": "Portfolio",
+        "DESCRIPTION": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+        "GITHUB": "Github",
+        "LIVE_TEST": "Live test",
+        "POLLO_LOCO_DESC": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+        "JOIN_DESC": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+    },
+    "REFERENCES": {
+        "LIST": [
+            {
+                "text": "Michael really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment.",
+                "author": "V. Schuster - Team Partner"
+            },
+            {
+                "text": "Michi was a top team colleague at DA. His positive commitment and willingness to take on responsibility made a significant contribution to us achieving our goals.",
+                "author": "E. Eichinger - Team Partner"
+            },
+            {
+                "text": "It was a great pleasure to work with Michael. He knows how to push and encourage team members to present the best work possible, always adding something to brainstorm. Regarding the well-being of group members, he was always present and available to listen and help others, with a great sense of humor as well.",
+                "author": "I. Nuber - Frontend Engineer"
+            }
+        ]
+    },
+    "CONTACT": {
+        "SUCCESS": "Message sent successfully!",
+        "TITLE": "Contact",
+        "SUBTITLE": "Got a problem to solve?",
+        "TEXT_LINE1": "Encourage people to contact you and describe what role",
+        "TEXT_LINE2": "you are interested in. Show that you will add value to their",
+        "TEXT_LINE3": "projects through your work.",
+        "DEV_NEED": "Need a Frontend developer?",
+        "DEV_CONTACT": "Contact me!",
+        "NAME_PLACEHOLDER": "Your name",
+        "NAME_REQUIRED": "Your name is required",
+        "EMAIL_PLACEHOLDER": "Your email",
+        "EMAIL_REQUIRED": "Your email is required",
+        "MSG_PLACEHOLDER": "Your message",
+        "MSG_REQUIRED": "Your message is empty",
+        "PRIVACY_PART1": "I've read the",
+        "PRIVACY_LINK": "privacy policy",
+        "PRIVACY_PART2": "and agree to the processing of my data as outlined.",
+        "PRIVACY_ERROR": "Please accept the privacy policy",
+        "SEND_BUTTON": "Send message :)",
+        "ERROR_ALERT": "Something went wrong. Please try again later."
+    }
+}

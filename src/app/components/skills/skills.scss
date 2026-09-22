@@ -288,6 +288,10 @@
         transform .125s ease,
         background-color .125s ease;
 
+    &.german-text {
+        font-size: 19px;
+    }
+
     @media (max-width: 1024px) {
         width: 180px;
         height: 52px;

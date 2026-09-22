@@ -1,0 +1,76 @@
+{
+    "NAVBAR": {
+        "ABOUT": "Über mich",
+        "SKILLS": "Fähigkeiten",
+        "PORTFOLIO": "Portfolio"
+    },
+    "HERO": {
+        "INTRO": "Ich bin",
+        "LETSTALK": "Lass uns reden!",
+        "SCROLL": "Nach unten scrollen"
+    },
+    "ABOUT": {
+        "TITLE": "Über mich",
+        "INTRO_P1": "Hey, ich bin Matthäus!",
+        "INTRO_P2": "Schreibe ein paar Informationen über dich, die mit IT zu tun haben. Warum brennst du fürs Programmieren? Was ist deine Inspirationsquelle, um deine Programmierfähigkeiten zu verbessern?",
+        "INTRO_P3": "Lass uns vernetzen und gemeinsam etwas Großartiges erschaffen!",
+        "LOCATION": "Wo befindest du dich? Bist du offen für verschiedene Arbeitsweisen wie Remote-Arbeit oder sogar einen Umzug?",
+        "LEARNING": "Zeige, dass du aufgeschlossen bist. Bist du begeistert davon, neue Technologien zu lernen und deine Fähigkeiten kontinuierlich zu verbessern?",
+        "PROBLEM": "Eine kurze Beschreibung deines Ansatzes zur Problemlösung. Lernst du aus jeder Herausforderung auf der Suche nach der effizientesten oder elegantesten Lösung? Du kannst Keywords einbauen wie: analytisches Denken, Kreativität, Ausdauer und Teamarbeit."
+    },
+    "SKILLS": {
+        "TITLE": "Fähigkeiten",
+        "DESCRIPTION": "Hebe deine Erfahrung bei der Arbeit an verschiedenen Projekten mit unterschiedlichen Frontend-Technologien (wie HTML, CSS, JavaScript usw.) hervor und betone deine Offenheit, neue Technologien zu lernen und dich anzupassen.",
+        "EDUCATION_NOTE": "Erwähne die Bedeutung der kontinuierlichen Weiterbildung, um mit den schnellen Veränderungen in der Webentwicklung Schritt zu halten.",
+        "SUBTITLE_PART1": "Suchst du nach",
+        "SUBTITLE_PART2": "einer anderen Fähigkeit?",
+        "SUBTITLE_TEXT": "Zeige Begeisterung für das Erlernen neuer Technologien und Frameworks.",
+        "BUTTON": "Kontakt aufnehmen"
+    },
+    "PORTFOLIO": {
+        "TITLE": "Portfolio",
+        "DESCRIPTION": "Entdecke hier eine Auswahl meiner Arbeiten – Interagiere mit Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+        "GITHUB": "Github",
+        "LIVE_TEST": "Live Test",
+        "POLLO_LOCO_DESC": "Ein Jump-, Run- und Wurfspiel auf Basis eines objektorientierten Ansatzes. Hilf Pepe, Münzen und Tabascosoße zu finden, um gegen das verrückte Huhn zu kämpfen.",
+        "JOIN_DESC": "Task-Manager, inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag-and-Drop, weise Benutzer und Kategorien zu."
+    },
+    "REFERENCES": {
+        "LIST": [
+            {
+                "text": "Michael hat das Team mit seiner großartigen Organisation und klaren Kommunikation wirklich zusammengehalten. Ohne seinen Einsatz wären wir nicht so weit gekommen.",
+                "author": "V. Schuster - Teampartner"
+            },
+            {
+                "text": "Michi war ein top Teamkollege bei DA. Sein positives Engagement und seine Bereitschaft, Verantwortung zu übernehmen, haben maßgeblich dazu beigetragen, dass wir unsere Ziele erreicht haben.",
+                "author": "E. Eichinger - Teampartner"
+            },
+            {
+                "text": "Es war eine große Freude, mit Michael zusammenzuarbeiten. Er weiß, wie man Teammitglieder motiviert und ermutigt, die bestmögliche Arbeit abzuliefern. Zudem hatte er immer ein offenes Ohr für das Wohlbefinden der Gruppe und brachte einen tollen Sinn für Humor mit.",
+                "author": "I. Nuber - Frontend Engineer"
+            }
+        ]
+    },
+    "CONTACT": {
+        "SUCCESS": "Nachricht erfolgreich gesendet!",
+        "TITLE": "Kontakt",
+        "SUBTITLE": "Ein Problem zu lösen?",
+        "TEXT_LINE1": "Ermutige Leute, dich zu kontaktieren, und beschreibe, für welche",
+        "TEXT_LINE2": "Rolle du dich interessierst. Zeige, dass du ihren",
+        "TEXT_LINE3": "Projekten durch deine Arbeit einen Mehrwert bringst.",
+        "DEV_NEED": "Wird ein Frontend-Entwickler gesucht?",
+        "DEV_CONTACT": "Kontaktiere mich!",
+        "NAME_PLACEHOLDER": "Dein Name",
+        "NAME_REQUIRED": "Dein Name ist erforderlich",
+        "EMAIL_PLACEHOLDER": "Deine E-Mail",
+        "EMAIL_REQUIRED": "Deine E-Mail ist erforderlich",
+        "MSG_PLACEHOLDER": "Deine Nachricht",
+        "MSG_REQUIRED": "Deine Nachricht ist leer",
+        "PRIVACY_PART1": "Ich habe die",
+        "PRIVACY_LINK": "Datenschutzerklärung",
+        "PRIVACY_PART2": "gelesen und stimme der beschriebenen Datenverarbeitung zu.",
+        "PRIVACY_ERROR": "Bitte akzeptiere die Datenschutzerklärung",
+        "SEND_BUTTON": "Nachricht senden :)",
+        "ERROR_ALERT": "Etwas ist schiefgelaufen. Bitte versuche es später noch einmal."
+    }
+}

@@ -4,13 +4,13 @@
   <div class="hero-inner">
     <div class="hero-content">
       <div class="hero-headline">
-        <span class="hero-intro">I am</span>
+          <span class="hero-intro" [class.german-text]="isGerman">{{ 'HERO.INTRO' | translate }}</span>        
         <div class="hero-text">
           <h1>MATTHÄUS STOJAK</h1>
           <h2>FRONTEND DEVELOPER</h2>
         </div>
       </div>
-      <button class="primary-btn" type="button" (click)="scrollToContact()">Let's talk!</button>
+      <button class="primary-btn" [class.german-text]="isGerman" type="button" (click)="scrollToContact()">{{ 'HERO.LETSTALK' | translate }}</button>
     </div>
     <div class="social-wrapper">
       <div class="line"></div>
@@ -21,7 +21,7 @@
       </div>
     </div>
     <div class="scroll-down">
-      <span>Scroll down</span>
+      <span [class.german-text]="isGerman">{{ 'HERO.SCROLL' | translate }}</span>
       <img src="assets/images/hero/arrow-down.svg" alt="" />
     </div>
   </div>

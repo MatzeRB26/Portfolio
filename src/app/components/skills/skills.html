@@ -1,26 +1,32 @@
 <section id="skills" class="skills">
-    <img class="skills-bg" src="assets/images/wave-bg.png" alt="wave-bg">
+    <img class="skills-bg" src="assets/images/wave-bg.png" alt="wave-bg" />
     <div class="container">
         <div class="skills-icons">
             @for (skill of skillIcons; track skill.name) {
                 <div class="skill">
-                    <img [src]="skill.image" [alt]="skill.image">
-                    <span>{{skill.name}}</span>
+                    <img [src]="skill.image" [alt]="skill.image" />
+                    <span>{{ skill.name }}</span>
                 </div>
             }
         </div>
-        
+
         <div class="skills-content">
             <div class="skills-title">
-                <h2>Skills</h2>
+                <h2>{{ 'SKILLS.TITLE' | translate }}</h2>
                 <div class="skills-line"></div>
+            </div>
+            <p> {{ 'SKILLS.DESCRIPTION' | translate }} <br />
+                {{ 'SKILLS.EDUCATION_NOTE' | translate }}
+            </p>
+            <h3>
+                {{ 'SKILLS.SUBTITLE_PART1' | translate }}
+                <span>{{ 'SKILLS.SUBTITLE_PART2' | translate }}</span>
+            </h3>
+            <p>{{ 'SKILLS.SUBTITLE_TEXT' | translate }}</p>
+
+            <button class="btn-primary" [class.german-text]="translate.currentLang() === 'de'" type="button" (click)="scrollToContact()">
+                {{ 'SKILLS.BUTTON' | translate }}
+            </button>
         </div>
-    <p>Highlight your experience of working on different projects using different front-end technologies (such as HTML, CSS, JavaScript, etc.) and emphasise your openness to learning
-    and adapting to new technologies. <br>Mention the importance of continuing education to keep up
-    with the rapid changes in web development.</p>
-        <h3>Looking for <span>another skill</span>?</h3>
-    <p>Reveal enthusiasm for learning new technologies and frameworks.</p>
-        <button class="btn-primary" type="button" (click)="scrollToContact()">Get in touch</button>
     </div>
-</div>
 </section>

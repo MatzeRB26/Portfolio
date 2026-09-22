@@ -1,28 +1,32 @@
 <header>
     <div class="content">
-        <a class="logo" href="#">Matthäus</a>
+    <a class="logo" href="#">Matthäus</a>
+    <button class="burger-btn" (click)="toggleMenu()" [class.open]="isMenuOpen" type="button">
+        @if (isMenuOpen) {
+            <img class="closeX" src="assets/icons/close.svg" alt="Schließen">
+        } @else {
+            <img src="assets/icons/burger-menu.svg" alt="Menü öffnen">
+        }
+    </button>
 
-        <button class="burger-btn" (click)="toggleMenu()" [class.open]="isMenuOpen">
-            @if (isMenuOpen) {
-                <img class="closeX" src="assets/icons/close.svg" alt="Schließen">
-            } @else {
-                <img src="assets/icons/burger-menu.svg" alt="Menü öffnen">
-            }
-        </button>
+    <div class="navigation" [class.open]="isMenuOpen">
+        <nav>
+            <ul>
+                <li><a (click)="scrollToSection('about')">{{ 'NAVBAR.ABOUT' | translate }}</a></li>
+                <li><a (click)="scrollToSection('skills')">{{ 'NAVBAR.SKILLS' | translate }}</a></li>
+                <li><a (click)="scrollToSection('portfolio')">{{ 'NAVBAR.PORTFOLIO' | translate }}</a></li>
+            </ul>
+        </nav>
 
-
-        <div class="navigation" [class.open]="isMenuOpen">
-            <nav>
-                <ul>
-                    <li><a href="#about" (click)="closeMenu()">About me</a></li>
-                    <li><a href="#skills" (click)="closeMenu()">Skills</a></li>
-                    <li><a href="#portfolio" (click)="closeMenu()">Portfolio</a></li>
-                </ul>
-            </nav>
-            <div class="language-switch">
-                <button>DE</button>
-                <button class="active">EN</button>
-            </div>
+        <div class="language-switch">
+            <button type="button" (click)="switchLanguage('de')" [class.active]="currentLang === 'de'">
+                DE
+            </button>
+            <button type="button" (click)="switchLanguage('en')" [class.active]="currentLang === 'en'">
+                EN
+            </button>
         </div>
     </div>
+</div>
 </header>
+

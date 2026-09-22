@@ -1,60 +1,60 @@
 <section id="contact" class="contact">
   @if (isSubmitted) {
     <div class="toast-message">
-      <span>Message sent successfully!</span>
+      <span>{{ 'CONTACT.SUCCESS' | translate }}</span>
     </div>
   }
   <img src="assets/images/purple-shadow-contact.png" alt="" class="contact-shadow" />
   <div class="contact-header">
-    <h2>Contact</h2>
+    <h2>{{ 'CONTACT.TITLE' | translate }}</h2>
   </div>
   <div class="contact-content">
     <div class="contact-left">
       <div class="contact-subtitle">
         <div class="contact-subtitle-line"></div>
-        <h3>Got a problem to solve?</h3>
+        <h3>{{ 'CONTACT.SUBTITLE' | translate }}</h3>
       </div>
       <p class="contact-text">
-        Encourage people to contact you and describe what role<br />
-        you are interested in. Show that you will add value to their<br />
-        projects through your work.
+        {{ 'CONTACT.TEXT_LINE1' | translate }}<br />
+        {{ 'CONTACT.TEXT_LINE2' | translate }}<br />
+        {{ 'CONTACT.TEXT_LINE3' | translate }}
       </p>
       <p class="contact-developer">
-        Need a Frontend developer?
-        <span>Contact me!</span>
+        {{ 'CONTACT.DEV_NEED' | translate }}
+        <span>{{ 'CONTACT.DEV_CONTACT' | translate }}</span>
       </p>
     </div>
     <div class="contact-right">
       <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-        <input type="text" placeholder="Your name" formControlName="name" />
+        <input type="text" [placeholder]="'CONTACT.NAME_PLACEHOLDER' | translate" formControlName="name" />
         @if (contactForm.get('name')?.touched && contactForm.get('name')?.hasError('required')) {
-          <p class="error">Your name is required</p>
+          <p class="error">{{ 'CONTACT.NAME_REQUIRED' | translate }}</p>
         }
-        <input type="email" placeholder="Your email" formControlName="email" />
+        <input type="email" [placeholder]="'CONTACT.EMAIL_PLACEHOLDER' | translate" formControlName="email" />
         @if (contactForm.get('email')?.touched && contactForm.get('email')?.hasError('required')) {
-          <p class="error">Your email is required</p>
+          <p class="error">{{ 'CONTACT.EMAIL_REQUIRED' | translate }}</p>
         }
-        <textarea placeholder="Your message" formControlName="message"></textarea>
+        <textarea [placeholder]="'CONTACT.MSG_PLACEHOLDER' | translate" formControlName="message"></textarea>
         @if (
           contactForm.get('message')?.touched && contactForm.get('message')?.hasError('required')
         ) {
-          <p class="error">Your message is empty</p>
+          <p class="error">{{ 'CONTACT.MSG_REQUIRED' | translate }}</p>
         }
         <label class="privacy">
           <input type="checkbox" formControlName="privacy"/>
           <span class="privacy-checkbox"></span>
-          <span class="privacy-text">
-            I've read the
-            <a routerLink="/privacy-policy"> privacy policy</a>
-            and agree to the processing of my data as outlined.
+          <span class="privacy-text" [class.german-text]="isGerman">
+            {{ 'CONTACT.PRIVACY_PART1' | translate }}
+            <a routerLink="/privacy-policy">{{ 'CONTACT.PRIVACY_LINK' | translate }}</a>
+            {{ 'CONTACT.PRIVACY_PART2' | translate }}
           </span>
         </label>
         <div class="error-container">
           @if (contactForm.get('privacy')?.invalid && contactForm.get('privacy')?.touched) {
-            <p class="error">Please accept the privacy policy</p>
+            <p class="error">{{ 'CONTACT.PRIVACY_ERROR' | translate }}</p>
           }
         </div>
-        <button type="submit" [class.invalid]="contactForm.valid">Send message :)</button>
+        <button type="submit" [class.invalid]="contactForm.valid">{{ 'CONTACT.SEND_BUTTON' | translate }}</button>
       </form>
       <a href="#" class="scroll-top">
         <img src="assets/icons/go-up-button.svg" alt="Scroll to top" />
