@@ -46,7 +46,7 @@
           <span class="privacy-text" [class.german-text]="isGerman">
             {{ 'CONTACT.PRIVACY_PART1' | translate }}
             <a routerLink="/privacy-policy">{{ 'CONTACT.PRIVACY_LINK' | translate }}</a>
-            {{ 'CONTACT.PRIVACY_PART2' | translate }}
+            <span [innerHTML]="'CONTACT.PRIVACY_PART2' | translate"></span>
           </span>
         </label>
         <div class="error-container">

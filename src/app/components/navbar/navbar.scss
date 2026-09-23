@@ -86,20 +86,15 @@ gap: 92px;
     left: 0;
     width: 100%;
     height: calc(100vh - 80px);
-
     background-color: rgba(20, 29, 47, 0.85);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-
     flex-direction: column;
     justify-content: flex-start;
-
     padding-top: 180px;
     gap: 32px;
-
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
-
     overflow-y: auto;
 
     &.open {
@@ -126,6 +121,7 @@ a {
     line-height: 120%;
     color: rgba(255, 255, 255, 1);
     transition: color 0.2s ease;
+    cursor: pointer;
 
     &:hover {
         color: rgba(112, 230, 28, 1);

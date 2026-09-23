@@ -43,7 +43,6 @@ export class Contact {
 
     this.http.post('https://api.web3forms.com/submit', formData).subscribe({
       next: (response) => {
-        console.log('Successfully sent!', response);
         this.isSubmitted = true;
         this.contactForm.reset();
         

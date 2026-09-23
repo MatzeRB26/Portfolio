@@ -32,7 +32,7 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(),
     
     provideTranslateService({
-      lang: 'de',
+      lang: 'en',
       loader: provideTranslateHttpLoader({
         prefix: './assets/i18n/',
         suffix: '.json'

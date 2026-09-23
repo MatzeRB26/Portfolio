@@ -16,6 +16,7 @@
             <div class="references-image-container">
                 <img class="references-image" [src]="referenceImages[currentReference()]" [alt]="('REFERENCES.LIST' | translate)[currentReference()].author">
             </div>
+            <div class="references-image-line"></div>
         </div>
         <div class="references-navigation">
             <button class="references-arrow" type="button" aria-label="Previous reference" (click)="previousReference()">
