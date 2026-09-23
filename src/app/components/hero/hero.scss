@@ -96,10 +96,6 @@
         @media (max-width: 1024px) {
             font-size: 56px;
         }
-
-        @media (max-width: 768px) {
-            font-size: 38px;
-        }
     }
 
     @media (max-width: 1024px) {
@@ -108,18 +104,26 @@
 
     @media (max-width: 768px) {
         font-size: 48px;
+
+        &.german-text {
+            font-size: 30px;
+        }
     }
 
     @media (max-width: 480px) {
-        font-size: 32px;
-        
+        font-size: 60px;
+
         &.german-text {
-            font-size: 26px;
+            font-size: 40px;
         }
     }
 
     @media (max-width: 390px) {
         font-size: 28px;
+
+        &.german-text {
+            font-size: 15px;
+        }
     }
 
     @media (max-width: 320px) {
@@ -198,9 +202,9 @@
     transition:
         transform .125s ease,
         background-color .125s ease;
-        white-space: nowrap;
-        
-        &.german-text {
+    white-space: nowrap;
+
+    &.german-text {
         font-size: 20px;
     }
 
@@ -213,8 +217,20 @@
     @media (max-width: 768px) {
         width: 140px;
         height: 48px;
-        font-size: 18px;
+        font-size: 20px;
         top: 25px;
+
+        &.german-text {
+            font-size: 15px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        font-size: 20px;
+
+        &.german-text {
+            font-size: 15px;
+        }
     }
 
     @media (max-width: 320px) {
@@ -222,6 +238,10 @@
         height: 44px;
         font-size: 16px;
         top: 25px;
+
+        &.german-text {
+            font-size: 15px;
+        }
     }
 }
 
@@ -363,10 +383,10 @@
     font-weight: 400;
     line-height: 120%;
     color: rgba(255, 255, 255, 1);
-    white-space: nowrap; 
+    white-space: nowrap;
 
     &.german-text {
-        font-size: 18px; 
+        font-size: 18px;
     }
 
     @media (max-width: 1024px) {

@@ -41,5 +41,6 @@ export class Navbar {
     switchLanguage(lang: string): void {
         this.translate.use(lang);
         this.currentLang = lang;
+        this.closeMenu();
     }
 }
