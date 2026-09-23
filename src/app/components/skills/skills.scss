@@ -41,30 +41,61 @@
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 100px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 471px;
+    grid-template-areas: 
+        "title title"
+        "icons content";
     align-items: center;
+    column-gap: 40px;
+
+    .skills-title {
+        grid-area: title;
+    }
+    .skills-icons {
+        grid-area: icons;
+    }
+    .skills-content {
+        grid-area: content;
+    }
 
     @media (max-width: 1024px) {
         padding: 0 40px;
         gap: 40px;
+        grid-template-columns: auto 400px;
     }
 
     @media (max-width: 768px) {
-        flex-direction: column-reverse;
+        display: flex;
+        flex-direction: column;
         align-items: center;
         padding: 0 24px;
-        gap: 40px;
+        gap: 32px;
+
+        .skills-title {
+            order: 1;
+            width: 100%;
+        }
+
+        .skills-icons {
+            order: 2; 
+            width: 100%;
+        }
+
+        .skills-content {
+            order: 3; 
+            width: 100%;
+        }
     }
 
     @media (max-width: 480px) {
         padding: 0 16px;
-        gap: 32px;
+        gap: 24px;
     }
 
     @media (max-width: 320px) {
         padding: 0 12px;
-        gap: 24px;
+        gap: 20px;
     }
 }
 
@@ -146,15 +177,19 @@
     width: 471px;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    text-align: right;
+    align-items: flex-start;
+    text-align: left;
 
     @media (max-width: 1024px) {
         width: 400px;
+        align-items: flex-end;
+        text-align: right;
     }
 
     @media (max-width: 768px) {
         width: 100%;
+        align-items: flex-end;
+        text-align: right;
     }
 }
 
@@ -289,8 +324,8 @@
     transition:
         transform .125s ease,
         background-color .125s ease;
-    align-self: center;
-
+    align-self: flex-start;
+    
     &.german-text {
         font-size: 18px;
     }
@@ -299,6 +334,7 @@
         width: 180px;
         height: 52px;
         font-size: 20px;
+        align-self: center;
 
         &.german-text {
         font-size: 17px;

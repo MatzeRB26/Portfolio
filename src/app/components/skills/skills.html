@@ -1,6 +1,12 @@
 <section id="skills" class="skills">
     <img class="skills-bg" src="assets/images/wave-bg.png" alt="wave-bg" />
     <div class="container">
+        
+        <div class="skills-title">
+            <h2>{{ 'SKILLS.TITLE' | translate }}</h2>
+            <div class="skills-line"></div>
+        </div>
+
         <div class="skills-icons">
             @for (skill of skillIcons; track skill.name) {
                 <div class="skill">
@@ -11,10 +17,6 @@
         </div>
 
         <div class="skills-content">
-            <div class="skills-title">
-                <h2>{{ 'SKILLS.TITLE' | translate }}</h2>
-                <div class="skills-line"></div>
-            </div>
             <p> {{ 'SKILLS.DESCRIPTION' | translate }} <br />
                 {{ 'SKILLS.EDUCATION_NOTE' | translate }}
             </p>
@@ -28,5 +30,6 @@
                 {{ 'SKILLS.BUTTON' | translate }}
             </button>
         </div>
+
     </div>
 </section>
