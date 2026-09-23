@@ -5,55 +5,57 @@
 @use './styles/base/typography.scss';
 
 @font-face {
-font-family: "Poppins";
-src: url("../public/assets/fonts/poppins-v24-latin-regular.woff2") format("woff2");
-font-weight: 400;
-font-style: normal;
+  font-family: "Poppins";
+  src: url("../public/assets/fonts/poppins-v24-latin-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-font-family: "Poppins";
-src: url("../public/assets/fonts/poppins-v24-latin-700.woff2") format("woff2");
-font-weight: 700;
-font-style: normal;
+  font-family: "Poppins";
+  src: url("../public/assets/fonts/poppins-v24-latin-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: url('../public/assets/fonts/open-sans-v44-latin-regular.woff2') format('woff2'); 
+  src: url('../public/assets/fonts/open-sans-v44-latin-regular.woff2') format('woff2');
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
-  src: url('../public/assets/fonts/open-sans-v44-latin-700.woff2') format('woff2'); 
+  src: url('../public/assets/fonts/open-sans-v44-latin-700.woff2') format('woff2');
 }
 
-  body {
-    font-family: "Poppins";
-    background-color: #141D2F;
-    scroll-behavior: smooth;
+body {
+  font-family: "Poppins";
+  background-color: #141D2F;
+  scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-text-decoration: none;
-position: relative;
-list-style: none;
-font-size: inherit;
-color: inherit;
-font-family: inherit;
-background: initial;
-border: initial;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  position: relative;
+  list-style: none;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+  background: initial;
+  border: initial;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  overflow-x: clip;
 }
