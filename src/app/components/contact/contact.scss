@@ -116,8 +116,15 @@
     @include respond(480px) { right: calc(100% + 16px); }
 }
 
-.contact-text, .contact-developer, .privacy-text {
+.contact-text, .contact-developer {
     font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    color: #fff;
+}
+
+.privacy-text{
+    font-size: 14px;
     font-weight: 400;
     line-height: 120%;
     color: #fff;
@@ -207,7 +214,7 @@
 }
 
 .privacy-text {
-    max-width: 560px; white-space: normal; word-break: break-word;
+    max-width: 768px; white-space: normal; word-break: break-word;
     @include respond(480px) { font-size: 12px; }
     a {
         color: #9747ff; transition: .2s;
@@ -230,7 +237,7 @@
 }
 
 .error {
-    margin-top: -16px; font-size: 16px; color: #E61C40;
+    margin-top: -16px; font-size: 14px; color: #E61C40;
     @include respond(480px) { font-size: 12px; margin-top: -12px; }
 }
 

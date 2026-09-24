@@ -10,8 +10,6 @@ import { TranslateService, TranslatePipe } from '@ngx-translate/core';
     styleUrl: './navbar.scss',
 })
 export class Navbar {
-
-
     private translate = inject(TranslateService);
 
     isMenuOpen = false;
@@ -19,12 +17,10 @@ export class Navbar {
 
     toggleMenu(): void {
         this.isMenuOpen = !this.isMenuOpen;
-        document.body.style.overflow = this.isMenuOpen ? 'hidden' : '';
     }
 
     closeMenu(): void {
         this.isMenuOpen = false;
-        document.body.style.overflow = '';
     }
 
     scrollToSection(sectionId: string): void {

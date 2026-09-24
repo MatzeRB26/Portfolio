@@ -23,7 +23,7 @@
         "DESCRIPTION": "Hebe deine Erfahrung bei der Arbeit an verschiedenen Projekten mit unterschiedlichen Frontend-Technologien (wie HTML, CSS, JavaScript usw.) hervor und betone deine Offenheit, neue Technologien zu lernen und dich anzupassen.",
         "EDUCATION_NOTE": "Erwähne die Bedeutung der kontinuierlichen Weiterbildung, um mit den schnellen Veränderungen in der Webentwicklung Schritt zu halten.",
         "SUBTITLE_PART1": "Suchst du nach",
-        "SUBTITLE_PART2": "einer anderen Fähigkeit?",
+        "SUBTITLE_PART2": "einer anderen Fähigkeit",
         "SUBTITLE_TEXT": "Zeige Begeisterung für das Erlernen neuer Technologien und Frameworks.",
         "BUTTON": "Kontakt aufnehmen"
     },
@@ -68,7 +68,7 @@
         "MSG_REQUIRED": "Deine Nachricht ist leer",
         "PRIVACY_PART1": "Ich habe die",
         "PRIVACY_LINK": "Datenschutzerklärung",
-        "PRIVACY_PART2": " gelesen <br>und stimme der beschriebenen Datenverarbeitung zu.",
+        "PRIVACY_PART2": " gelesen und stimme der beschriebenen Datenverarbeitung zu.",
         "PRIVACY_ERROR": "Bitte akzeptiere die Datenschutzerklärung",
         "SEND_BUTTON": "Nachricht senden :)",
         "ERROR_ALERT": "Etwas ist schiefgelaufen. Bitte versuche es später noch einmal."
@@ -107,5 +107,8 @@
         "INDEMNITY_TEXT1": "Sie erklären sich damit einverstanden, uns (die aufgeführten Studierenden), die Developer Akademie sowie unsere verbundenen Unternehmen, Partner, leitenden Angestellten, Direktoren, Vertreter und Mitarbeiter von allen Ansprüchen, Forderungen, Verlusten, Schäden, Kosten oder Verbindlichkeiten (einschließlich angemessener Anwaltskosten) freizustellen, zu verteidigen und schadlos zu halten, die sich aus oder im Zusammenhang mit Ihrer Nutzung von <span>Portfolio</span> und/oder Ihrem Verstoß gegen diesen rechtlichen Hinweis ergeben.",
         "INDEMNITY_TEXT2": "Bei Fragen oder Hinweisen wenden Sie sich bitte an m.stojak@web.de.",
         "DATE": "Datum: 26. Juli 2025"
+    },
+    "FOOTER": {
+        "LEGAL_NOTICE": "Rechtlicher Hinweis"
     }
 }

@@ -97,6 +97,8 @@ header {
         visibility: hidden;
         transition: transform 0.3s ease-in-out;
         overflow-y: auto;
+        overscroll-behavior: contain;
+        touch-action: none;
 
         &.open {
             transform: translateX(0);

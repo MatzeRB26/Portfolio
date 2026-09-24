@@ -23,7 +23,7 @@
         "DESCRIPTION": "Highlight your experience of working on different projects using different front-end technologies (such as HTML, CSS, JavaScript, etc.) and emphasise your openness to learning and adapting to new technologies.",
         "EDUCATION_NOTE": "Mention the importance of continuing education to keep up with the rapid changes in web development.",
         "SUBTITLE_PART1": "Looking for",
-        "SUBTITLE_PART2": "another skill?",
+        "SUBTITLE_PART2": "another skill",
         "SUBTITLE_TEXT": "Reveal enthusiasm for learning new technologies and frameworks.",
         "BUTTON": "Get in touch"
     },
@@ -107,5 +107,8 @@
         "INDEMNITY_TEXT1": "You agree to indemnify, defend and hold harmless us, the listed students, the Developer Akademie, and our affiliates, partners, officers, directors, agents, and employees from and against any claim, demand, loss, damage, cost, or liability (including reasonable legal fees) arising out of or relating to your use of <span>Portfolio</span> and/or your breach of this Legal Notice.",
         "INDEMNITY_TEXT2": "For any questions or notices, please contact us at m.stojak@web.de.",
         "DATE": "Date: July 26, 2025"
+    },
+    "FOOTER": {
+        "LEGAL_NOTICE": "Legal Notice"
     }
 }

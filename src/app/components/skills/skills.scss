@@ -8,11 +8,11 @@
     }
 
     @media (max-width: 768px) {
-        margin-top: 50px;
+        margin-top: 90px;
     }
 
     @media (max-width: 480px) {
-        margin-top: 50px;
+        margin-top: 90px;
     }
 
     @media (max-width: 320px) {
@@ -40,27 +40,30 @@
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 100px;
+    padding: 100px 100px;
     display: grid;
     grid-template-columns: auto 471px;
-    grid-template-areas: 
-        "title title"
+    grid-template-areas:
+        "icons title"
         "icons content";
     align-items: center;
     column-gap: 40px;
 
     .skills-title {
         grid-area: title;
+        justify-content: flex-end;
     }
+
     .skills-icons {
         grid-area: icons;
     }
+
     .skills-content {
         grid-area: content;
     }
 
     @media (max-width: 1024px) {
-        padding: 0 40px;
+        padding: 80px 40px;
         gap: 40px;
         grid-template-columns: auto 400px;
     }
@@ -69,21 +72,22 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0 24px;
+        padding: 10px 24px;
         gap: 32px;
 
         .skills-title {
             order: 1;
             width: 100%;
+            justify-content: flex-start;
         }
 
         .skills-icons {
-            order: 2; 
+            order: 2;
             width: 100%;
         }
 
         .skills-content {
-            order: 3; 
+            order: 3;
             width: 100%;
         }
     }
@@ -188,6 +192,11 @@
 
     @media (max-width: 768px) {
         width: 100%;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    @media (max-width: 480px) {
         align-items: flex-end;
         text-align: right;
     }
@@ -223,20 +232,36 @@
     line-height: 120%;
     flex-shrink: 0;
 
+    &.german-text {
+        font-size: 60px;
+    }
+
     @media (max-width: 1024px) {
         font-size: 70px;
     }
 
     @media (max-width: 768px) {
         font-size: 52px;
+
+        &.german-text {
+            font-size: 48px;
+        }
     }
 
     @media (max-width: 480px) {
         font-size: 38px;
+
+        &.german-text {
+            font-size: 38px;
+        }
     }
 
     @media (max-width: 320px) {
         font-size: 30px;
+
+        &.german-text {
+            font-size: 30px;
+        }
     }
 }
 
@@ -325,7 +350,7 @@
         transform .125s ease,
         background-color .125s ease;
     align-self: flex-start;
-    
+
     &.german-text {
         font-size: 18px;
     }
@@ -337,8 +362,8 @@
         align-self: center;
 
         &.german-text {
-        font-size: 17px;
-    }
+            font-size: 17px;
+        }
     }
 
     @media (max-width: 480px) {
@@ -347,8 +372,8 @@
         font-size: 18px;
 
         &.german-text {
-        font-size: 15px;
-    }
+            font-size: 15px;
+        }
     }
 
     @media (max-width: 320px) {
@@ -357,8 +382,8 @@
         font-size: 16px;
 
         &.german-text {
-        font-size: 13px;
-    }
+            font-size: 13px;
+        }
     }
 }
 

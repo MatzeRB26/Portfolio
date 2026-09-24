@@ -3,7 +3,7 @@
     <div class="container">
         
         <div class="skills-title">
-            <h2>{{ 'SKILLS.TITLE' | translate }}</h2>
+            <h2 [class.german-text]="isGerman">{{ 'SKILLS.TITLE' | translate }}</h2>
             <div class="skills-line"></div>
         </div>
 
@@ -17,12 +17,12 @@
         </div>
 
         <div class="skills-content">
-            <p> {{ 'SKILLS.DESCRIPTION' | translate }} <br />
+            <p> {{ 'SKILLS.DESCRIPTION' | translate }} <br/>
                 {{ 'SKILLS.EDUCATION_NOTE' | translate }}
             </p>
             <h3>
                 {{ 'SKILLS.SUBTITLE_PART1' | translate }}
-                <span>{{ 'SKILLS.SUBTITLE_PART2' | translate }}</span>
+                <span>{{ 'SKILLS.SUBTITLE_PART2' | translate }}</span>?
             </h3>
             <p>{{ 'SKILLS.SUBTITLE_TEXT' | translate }}</p>
 

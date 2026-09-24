@@ -23,6 +23,10 @@ export class Skills {
     { name: 'Supabase', image: 'assets/icons/supabase.svg' }
   ];
 
+  get isGerman(): boolean {
+    return this.translate.currentLang() === 'de';
+  }
+
   scrollToContact(): void {
     document.getElementById('contact')?.scrollIntoView({
       behavior: 'smooth'
