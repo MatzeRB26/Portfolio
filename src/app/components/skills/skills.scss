@@ -20,7 +20,8 @@
     top: -200px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1;
+    z-index: 5;
+    pointer-events: none;
 
     @media (max-width: 1024px) {
         top: -180px;
@@ -42,6 +43,7 @@
 }
 
 .container {
+    position: relative;
     max-width: 1440px;
     margin: 0 auto;
     padding: 100px 100px;
@@ -52,7 +54,7 @@
         "icons content";
     align-items: center;
     column-gap: 40px;
-    z-index: 20;
+    z-index: 10;
 
     .skills-title {
         grid-area: title;
@@ -79,6 +81,7 @@
         align-items: center;
         padding: 10px 24px;
         gap: 32px;
+        z-index: 10;
 
         .skills-title {
             order: 1;
