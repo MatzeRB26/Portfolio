@@ -189,17 +189,48 @@ h2 {
     width: 634px;
 
     @media (max-width: 1024px) {
-        width: 100%;
+        width: 634px;
+    }
+
+    @media (max-width: 768px) {
+        width: 634px;
+    }
+
+    @media (max-width: 480px) {
+        width: 550px;
+    }
+
+    @media (max-width: 320px) {
+        width: 400px;
     }
 }
 
 .about-person {
     position: relative;
-    width: 593px;
+    width: 423px;
     top: 30px;
 
     @media (max-width: 1024px) {
-        width: 100%;
+        width: 400px;
+        height: 580px;
+        top: 0;
+    }
+
+    @media (max-width: 768px) {
+        width: 380px;
+        height: 550px;
+        top: 0;
+    }
+
+    @media (max-width: 480px) {
+        width: 370px;
+        height: 520px;
+        top: 0;
+    }
+
+    @media (max-width: 320px) {
+        width: 290px;
+        height: 450px;
         top: 0;
     }
 }
