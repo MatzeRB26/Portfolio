@@ -2,10 +2,6 @@
     position: relative;
     overflow-x: clip;
 
-    @media (max-width: 1024px) {
-        // margin-top: 50px;
-    }
-
     @media (max-width: 768px) {
         margin-top: 100px;
     }
@@ -24,17 +20,20 @@
     top: -200px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 999;
+    z-index: 1;
 
-    @media (max-width: 768px) {
-        top: -150px;
+    @media (max-width: 1024px) {
+        top: -180px;
         width: 100%;
         height: auto;
     }
 
+    @media (max-width: 768px) {
+        top: -700px;
+    }
+
     @media (max-width: 480px) {
         top: -680px;
-        z-index: 1;
     }
 
     @media (max-width: 320px) {
@@ -53,7 +52,7 @@
         "icons content";
     align-items: center;
     column-gap: 40px;
-    z-index: 1000;
+    z-index: 20;
 
     .skills-title {
         grid-area: title;
@@ -396,5 +395,4 @@
 .btn-primary:hover {
     background: rgba(151, 71, 255, 1);
     transform: scale(1.08);
-    z-index: 1000;
 }
