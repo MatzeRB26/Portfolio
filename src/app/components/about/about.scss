@@ -186,14 +186,15 @@ h2 {
 
 .about-glow {
     position: absolute;
-    width: 634px;
+    width: 650px;
+    height: 580px;
 
     @media (max-width: 1024px) {
         width: 634px;
     }
 
     @media (max-width: 768px) {
-        width: 634px;
+        width: 610px;
     }
 
     @media (max-width: 480px) {
@@ -201,23 +202,25 @@ h2 {
     }
 
     @media (max-width: 320px) {
-        width: 400px;
+        width: 370px;
+        height: 500px;
     }
 }
 
 .about-person {
     position: relative;
     width: 423px;
+    height: 580px;
     top: 30px;
 
     @media (max-width: 1024px) {
         width: 400px;
-        height: 580px;
+        height: 550px;
         top: 0;
     }
 
     @media (max-width: 768px) {
-        width: 380px;
+        width: 400px;
         height: 550px;
         top: 0;
     }
