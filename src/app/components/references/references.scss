@@ -40,7 +40,6 @@
         gap: 32px;
         position: relative;
         padding: 0 20px;
-        box-sizing: border-box;
 
         @media (max-width: 768px) {
             gap: 24px;
@@ -177,11 +176,10 @@
             position: absolute;
             top: 50%;
             left: 100%;          
-            width: 3440px;        
+            width: 3850px;        
             height: 4px;
             transform: translateY(-50%);
             background: rgba(112, 230, 28, 1);
-            z-index: 2;
         }
 
         @media (max-width: 1024px) {
