@@ -26,34 +26,43 @@
     </div>
     <div class="contact-right">
       <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-        <input type="text" [placeholder]="'CONTACT.NAME_PLACEHOLDER' | translate" formControlName="name" />
-        @if (contactForm.get('name')?.touched && contactForm.get('name')?.hasError('required')) {
-          <p class="error">{{ 'CONTACT.NAME_REQUIRED' | translate }}</p>
-        }
-        <input type="email" [placeholder]="'CONTACT.EMAIL_PLACEHOLDER' | translate" formControlName="email" />
-        @if (contactForm.get('email')?.touched && contactForm.get('email')?.hasError('required')) {
-          <p class="error">{{ 'CONTACT.EMAIL_REQUIRED' | translate }}</p>
-        }
-        <textarea [placeholder]="'CONTACT.MSG_PLACEHOLDER' | translate" formControlName="message"></textarea>
-        @if (
-          contactForm.get('message')?.touched && contactForm.get('message')?.hasError('required')
-        ) {
-          <p class="error">{{ 'CONTACT.MSG_REQUIRED' | translate }}</p>
-        }
-        <label class="privacy">
-          <input type="checkbox" formControlName="privacy"/>
-          <span class="privacy-checkbox"></span>
-          <span class="privacy-text" [class.german-text]="isGerman">
-            {{ 'CONTACT.PRIVACY_PART1' | translate }}
-            <a routerLink="/privacy-policy">{{ 'CONTACT.PRIVACY_LINK' | translate }}</a>
-            <span [innerHTML]="'CONTACT.PRIVACY_PART2' | translate"></span>
-          </span>
-        </label>
-        <div class="error-container">
-          @if (contactForm.get('privacy')?.invalid && contactForm.get('privacy')?.touched) {
-            <p class="error">{{ 'CONTACT.PRIVACY_ERROR' | translate }}</p>
-          }
+        
+        <div class="form-field-wrapper">
+          <input type="text" [placeholder]="'CONTACT.NAME_PLACEHOLDER' | translate" formControlName="name" />
+          <p class="error" [class.visible]="contactForm.get('name')?.touched && contactForm.get('name')?.hasError('required')">
+            {{ 'CONTACT.NAME_REQUIRED' | translate }}
+          </p>
         </div>
+
+        <div class="form-field-wrapper">
+          <input type="email" [placeholder]="'CONTACT.EMAIL_PLACEHOLDER' | translate" formControlName="email" />
+          <p class="error" [class.visible]="contactForm.get('email')?.touched && contactForm.get('email')?.hasError('required')">
+            {{ 'CONTACT.EMAIL_REQUIRED' | translate }}
+          </p>
+        </div>
+
+        <div class="form-field-wrapper">
+          <textarea [placeholder]="'CONTACT.MSG_PLACEHOLDER' | translate" formControlName="message"></textarea>
+          <p class="error" [class.visible]="contactForm.get('message')?.touched && contactForm.get('message')?.hasError('required')">
+            {{ 'CONTACT.MSG_REQUIRED' | translate }}
+          </p>
+        </div>
+
+        <div class="form-field-wrapper">
+          <label class="privacy">
+            <input type="checkbox" formControlName="privacy"/>
+            <span class="privacy-checkbox"></span>
+            <span class="privacy-text" [class.german-text]="isGerman">
+              {{ 'CONTACT.PRIVACY_PART1' | translate }}
+              <a routerLink="/privacy-policy">{{ 'CONTACT.PRIVACY_LINK' | translate }}</a>
+              <span [innerHTML]="'CONTACT.PRIVACY_PART2' | translate"></span>
+            </span>
+          </label>
+          <p class="error" [class.visible]="contactForm.get('privacy')?.invalid && contactForm.get('privacy')?.touched">
+            {{ 'CONTACT.PRIVACY_ERROR' | translate }}
+          </p>
+        </div>
+
         <button type="submit" [class.invalid]="contactForm.valid">{{ 'CONTACT.SEND_BUTTON' | translate }}</button>
       </form>
       <a href="#" class="scroll-top">

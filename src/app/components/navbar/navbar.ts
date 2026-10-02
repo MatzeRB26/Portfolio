@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router'; 
 import { TranslateService, TranslatePipe } from '@ngx-translate/core';
 
 @Component({
@@ -11,6 +12,7 @@ import { TranslateService, TranslatePipe } from '@ngx-translate/core';
 })
 export class Navbar {
     private translate = inject(TranslateService);
+    private router = inject(Router); 
 
     isMenuOpen = false;
     currentLang = 'en';
@@ -25,13 +27,26 @@ export class Navbar {
 
     scrollToSection(sectionId: string): void {
         this.closeMenu();
+        const currentUrl = this.router.url.split('#')[0];
 
-        setTimeout(() => {
-            document.getElementById(sectionId)?.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
+        if (currentUrl === '/' || currentUrl === '') {
+            setTimeout(() => {
+                document.getElementById(sectionId)?.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }, 100);
+        } else {
+            
+            this.router.navigate(['/']).then(() => {
+                setTimeout(() => {
+                    document.getElementById(sectionId)?.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }, 0); 
             });
-        }, 0);
+        }
     }
 
     switchLanguage(lang: string): void {

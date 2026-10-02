@@ -154,8 +154,15 @@
 .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 12px;
     width: 100%;
+
+    .form-field-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        width: 100%;
+    }
 
     input, textarea {
         width: 100%;
@@ -237,13 +244,28 @@
 }
 
 .error {
-    margin-top: -16px; font-size: 14px; color: #E61C40;
-    @include respond(480px) { font-size: 12px; margin-top: -12px; }
+    margin: 0; 
+    font-size: 14px; 
+    color: #E61C40;
+    height: 22px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+
+    &.visible {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    @include respond(480px) { 
+        font-size: 12px; 
+        height: 16px; 
+    }
 }
 
 input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched { border: 1px solid #E61C40; }
 input.ng-valid.ng-touched, textarea.ng-valid.ng-touched { border: 1px solid #70E61C; }
-.error-container { min-height: 5px; }
+
 
 .toast-message {
     position: fixed; bottom: 350px; left: 50%; transform: translateX(-50%);
