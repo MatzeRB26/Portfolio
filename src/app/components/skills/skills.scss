@@ -1,6 +1,4 @@
 .skills {
-    // position: relative;
-
     @media (max-width: 768px) {
         margin-top: 50px;
     }
@@ -16,10 +14,10 @@
 
 .skills-bg {
     position: absolute;
-    max-width: 1440px;
     top: -200px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 5;
     pointer-events: none;
 
     @media (max-width: 1024px) {
@@ -53,7 +51,7 @@
         "icons content";
     align-items: center;
     column-gap: 40px;
-
+    z-index: 10;
 
     .skills-title {
         grid-area: title;
@@ -80,6 +78,7 @@
         align-items: center;
         padding: 10px 24px;
         gap: 32px;
+        z-index: 10;
 
         .skills-title {
             order: 1;
@@ -210,7 +209,6 @@
 
 .skills-title {
     width: 100%;
-    min-width: 0;
     display: flex;
     align-items: center;
     gap: 32px;
@@ -231,7 +229,7 @@
     }
 }
 
-h2 {
+.skills-title h2 {
     margin: 0;
     color: rgba(255, 255, 255, 1);
     font-size: 90px;
@@ -276,8 +274,12 @@ h2 {
     position: relative;
     width: 287px;
     height: 4px;
-    background-color: rgba(28, 218, 230, 1);
+    background: rgba(28, 218, 230, 1);
     border-radius: 10px 0 0 10px;
+
+    @media (max-width: 1024px) {
+        width: 100%;
+    }
 }
 
 .skills-line::after {
@@ -287,7 +289,7 @@ h2 {
     left: 100%;
     width: 3850px;
     height: 4px;
-    background-color: rgba(28, 218, 230, 1);
+    background: rgba(28, 218, 230, 1);
 }
 
 .skills-content p {
