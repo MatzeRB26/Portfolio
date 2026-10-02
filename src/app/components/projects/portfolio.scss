@@ -322,6 +322,18 @@
         color: rgba(255, 255, 255, 1);
     }
 
+    @media (min-width: 550px) and (max-width: 650px) {
+        &-primary {
+        top: 15px;
+    }
+    }
+
+    @media (min-width: 1025px) and (max-width: 1440px) {
+        &-primary {
+        top: 20px;
+    }
+    }
+
     &-primary:hover {
         background-color: rgba(112, 230, 28, 1);
     }
@@ -330,6 +342,18 @@
         background-color: transparent;
         color: rgba(255, 255, 255, 1);
         border: 2px solid rgba(28, 218, 230, 1);
+    }
+
+    @media (min-width: 550px) and (max-width: 650px) {
+        &-github {
+        top: 15px;
+    }
+    }
+
+    @media (min-width: 1025px) and (max-width: 1440px) {
+        &-github {
+        top: 20px;
+    }
     }
 
     &-github:hover {

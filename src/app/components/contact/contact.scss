@@ -164,6 +164,7 @@
         width: 100%;
     }
 
+
     input, textarea {
         width: 100%;
         box-sizing: border-box;
@@ -265,7 +266,6 @@
 
 input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched { border: 1px solid #E61C40; }
 input.ng-valid.ng-touched, textarea.ng-valid.ng-touched { border: 1px solid #70E61C; }
-
 
 .toast-message {
     position: fixed; bottom: 350px; left: 50%; transform: translateX(-50%);
