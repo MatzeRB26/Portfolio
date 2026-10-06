@@ -171,16 +171,16 @@
         flex-shrink: 0;
         position: relative;
 
-        &::after {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 100%;          
-            width: 3850px;        
-            height: 4px;
-            transform: translateY(-50%);
-            background: rgba(112, 230, 28, 1);
-        }
+        // &::after {
+        //     content: "";
+        //     position: absolute;
+        //     top: 50%;
+        //     left: 100%;          
+        //     width: 3850px;        
+        //     height: 4px;
+        //     transform: translateY(-50%);
+        //     background: rgba(112, 230, 28, 1);
+        // }
 
         @media (max-width: 1024px) {
             width: 250px;
