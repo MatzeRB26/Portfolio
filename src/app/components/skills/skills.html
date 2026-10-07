@@ -1,12 +1,10 @@
 <section id="skills" class="skills">
     <img class="skills-bg" src="assets/images/wave-bg.png" alt="wave-bg" />
     <div class="container">
-        
-        <div class="skills-title">
+        <!-- <div class="skills-title">
             <h2 [class.german-text]="isGerman">{{ 'SKILLS.TITLE' | translate }}</h2>
             <div class="skills-line"></div>
-        </div>
-
+        </div> -->
         <div class="skills-icons">
             @for (skill of skillIcons; track skill.name) {
                 <div class="skill">
@@ -17,19 +15,20 @@
         </div>
 
         <div class="skills-content">
-            <p> {{ 'SKILLS.DESCRIPTION' | translate }} <br/>
+            <h2 [class.german-text]="isGerman">{{ 'SKILLS.TITLE' | translate }}</h2>
+            <p>
+                {{ 'SKILLS.DESCRIPTION' | translate }} <br />
                 {{ 'SKILLS.EDUCATION_NOTE' | translate }}
             </p>
             <h3>
                 {{ 'SKILLS.SUBTITLE_PART1' | translate }}
-                <span>{{ 'SKILLS.SUBTITLE_PART2' | translate }}</span>?
+                <span>{{ 'SKILLS.SUBTITLE_PART2' | translate }}</span
+                >?
             </h3>
             <p>{{ 'SKILLS.SUBTITLE_TEXT' | translate }}</p>
-
             <button class="btn-primary" [class.german-text]="translate.currentLang() === 'de'" type="button" (click)="scrollToContact()">
                 {{ 'SKILLS.BUTTON' | translate }}
             </button>
         </div>
-
     </div>
 </section>

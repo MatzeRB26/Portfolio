@@ -2,7 +2,6 @@
 
 .contact {
     position: relative;
-    overflow-x: clip;
     padding-bottom: 250px;
 
     @include respond(1024px) { padding-bottom: 180px; }
