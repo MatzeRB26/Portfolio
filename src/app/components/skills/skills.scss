@@ -46,24 +46,9 @@
     margin: 0 auto;
     padding: 100px 100px;
     display: flex;
-    // grid-template-columns: auto 471px;
-    // grid-template-areas: "icons title" "icons content";
     align-items: center;
     column-gap: 40px;
-
-    // .skills-title {
-    //     grid-area: title;
-    //     justify-content: flex-start;
-    // }
-
-    // .skills-icons {
-    //     grid-area: icons;
-    // }
-
-    // .skills-content {
-    //     grid-area: content;
-    // }
-
+    
     @media (max-width: 1024px) {
         padding: 80px 40px;
         gap: 40px;
