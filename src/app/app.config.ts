@@ -6,6 +6,14 @@ import { provideHttpClient } from '@angular/common/http';
 import { provideTranslateService } from '@ngx-translate/core';
 import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
 
+
+const getInitialLang = (): string => {
+  if (typeof window !== 'undefined' && localStorage.getItem('language')) {
+    return localStorage.getItem('language')!;
+  }
+  return 'en'; 
+};
+
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
@@ -16,7 +24,7 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(),
     
     provideTranslateService({
-      lang: 'en',
+      lang: getInitialLang(), 
       loader: provideTranslateHttpLoader({
         prefix: './assets/i18n/',
         suffix: '.json'

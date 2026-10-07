@@ -1,5 +1,5 @@
-import { Component, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, OnInit, inject, PLATFORM_ID } from '@angular/core'; 
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { Router } from '@angular/router'; 
 import { TranslateService, TranslatePipe } from '@ngx-translate/core';
 
@@ -10,12 +10,26 @@ import { TranslateService, TranslatePipe } from '@ngx-translate/core';
     templateUrl: './navbar.html',
     styleUrl: './navbar.scss',
 })
-export class Navbar {
+export class Navbar implements OnInit { 
     private translate = inject(TranslateService);
     private router = inject(Router); 
+    private platformId = inject(PLATFORM_ID); 
 
     isMenuOpen = false;
     currentLang = 'en';
+
+    ngOnInit(): void {
+        if (isPlatformBrowser(this.platformId)) {
+            const savedLang = localStorage.getItem('language');
+            if (savedLang) {
+                this.currentLang = savedLang;
+                this.translate.use(savedLang);
+            } else {
+                const current = this.translate.currentLang;
+                this.currentLang = typeof current === 'function' ? (current() || 'en') : (current || 'en');
+            }
+        }
+    }
 
     toggleMenu(): void {
         this.isMenuOpen = !this.isMenuOpen;
@@ -37,7 +51,6 @@ export class Navbar {
                 });
             }, 100);
         } else {
-            
             this.router.navigate(['/']).then(() => {
                 setTimeout(() => {
                     document.getElementById(sectionId)?.scrollIntoView({
@@ -52,6 +65,9 @@ export class Navbar {
     switchLanguage(lang: string): void {
         this.translate.use(lang);
         this.currentLang = lang;
+        if (isPlatformBrowser(this.platformId)) {
+            localStorage.setItem('language', lang);
+        }
         this.closeMenu();
     }
 }
