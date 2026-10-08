@@ -11,20 +11,20 @@
     },
     "ABOUT": {
         "TITLE": "About me",
-        "INTRO_P1": "Hey there, I'm Matthäus!",
-        "INTRO_P2": "Write some information about yourself that is IT related. Why are you passionate about coding? What is your source of inspiration for improving your programming skills?",
-        "INTRO_P3": "Let's connect and create something amazing together!",
-        "LOCATION": "Where are you located? Are you open to different ways of working, such as working remotely or even relocating?",
-        "LEARNING": "Show that you are open-minded. Are you enthusiastic about learning new technologies and continually improving your skills?",
-        "PROBLEM": "A brief description of your problem-solving approach. Do you learn from each challenge as you search for the most efficient or elegant solution? You can include some keywords like: analytical thinking, creativity, persistence and collaboration."
+        "INTRO_P1": "Hi, I am Matthäus!",
+        "INTRO_P2": "Coding is a true passion of mine—I love turning creative ideas into reality with clean code.",
+        "INTRO_P3": "New challenges and continuous learning drive me forward. Let's connect and build something great together!",
+        "LOCATION": "I am location independent and very flexible, so working remotely or relocating to a different place is not a problem for me at all.",
+        "LEARNING": "New challenges and continuous learning drive me forward. Let's connect and build something great together!",
+        "PROBLEM": "My problem-solving approach combines analytical thinking with creativity and perseverance. I view every challenge as a learning opportunity to find the most efficient and elegant solution, while deeply valuing collaboration and teamwork."
     },
     "SKILLS": {
         "TITLE": "Skills",
-        "DESCRIPTION": "Highlight your experience of working on different projects using different front-end technologies (such as HTML, CSS, JavaScript, etc.) and emphasise your openness to learning and adapting to new technologies.",
-        "EDUCATION_NOTE": "Mention the importance of continuing education to keep up with the rapid changes in web development.",
+        "DESCRIPTION": "Through various projects, I have gained solid experience working with frontend technologies like HTML, CSS, and JavaScript. At the same time, I am always open to quickly learning new tools and adapting.",
+        "EDUCATION_NOTE": "Continuous learning is essential for me to keep pace with the rapid changes in web development.",
         "SUBTITLE_PART1": "Looking for",
         "SUBTITLE_PART2": "another skill",
-        "SUBTITLE_TEXT": "Reveal enthusiasm for learning new technologies and frameworks.",
+        "SUBTITLE_TEXT": "I am genuinely excited to continuously learn new technologies and frameworks to constantly expand my skill set.",
         "BUTTON": "Get in touch"
     },
     "PORTFOLIO": {
@@ -55,9 +55,9 @@
         "SUCCESS": "Message sent successfully!",
         "TITLE": "Contact",
         "SUBTITLE": "Got a problem to solve?",
-        "TEXT_LINE1": "Encourage people to contact you and describe what role",
-        "TEXT_LINE2": "you are interested in. Show that you will add value to their",
-        "TEXT_LINE3": "projects through your work.",
+        "TEXT_LINE1": "I am interested in a role as a Frontend Developer",
+        "TEXT_LINE2": "and look forward to adding real value to your projects through my work.",
+        "TEXT_LINE3": "Feel free to reach out let's connect!",
         "DEV_NEED": "Need a Frontend developer?",
         "DEV_CONTACT": "Contact me!",
         "NAME_PLACEHOLDER": "Your name",
